@@ -1,14 +1,7 @@
 rbraries
 ========
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(
-  warning = FALSE,
-  message = FALSE,
-  collapse = TRUE,
-  comment = "#>"
-)
-```
+
 
 [![Build Status](https://travis-ci.org/ropenscilabs/rbraries.svg?branch=master)](https://travis-ci.org/ropenscilabs/rbraries)
 [![codecov.io](https://codecov.io/github/ropenscilabs/rbraries/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/rbraries?branch=master)
@@ -22,12 +15,14 @@ knitr::opts_chunk$set(
 
 Development version
 
-```{r eval=FALSE}
+
+```r
 install.packages("devtools")
 devtools::install_github("ropenscilabs/rbraries")
 ```
 
-```{r}
+
+```r
 library('rbraries')
 ```
 
