@@ -1,3 +1,5 @@
+<!-- IF THIS INVOLVES AUTHENTICATION: DO NOT SHARE YOUR USERNAME/PASSWORD, OR API KEYS/TOKENS IN THIS ISSUE - MOST LIKELY THE MAINTAINER WILL HAVE THEIR OWN EQUIVALENT KEY -->
+
 <!--- Provide a general summary of your changes in the Title above -->
 
 ## Description
@@ -14,3 +16,4 @@ methods/functions, include an example if possible to do in brief form -->
 
 <!--- Did you remember to include tests? Unless you're just changing
 grammar, please include new tests for your change -->
+
