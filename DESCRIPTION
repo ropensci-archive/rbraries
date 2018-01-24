@@ -1,0 +1,19 @@
+Package: rbraries
+Title: Interface to the libraries.io API
+Description: Interface to the libraries.io API.
+Version: 0.0.1.9100
+Author: Scott Chamberlain [aut, cre]
+Maintainer: Scott Chamberlain <myrmecocystus+r@gmail.com>
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/rbraries
+BugReports: https://github.com/ropenscilabs/rbraries/issues
+Roxygen: list(markdown = TRUE)
+Imports:
+    jsonlite (>= 1.5),
+    crul (>= 0.4.0),
+    fauxpas,
+    data.table,
+    tibble
+Suggests:
+    testthat
+RoxygenNote: 6.0.1

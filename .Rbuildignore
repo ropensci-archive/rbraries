@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+^.*\.Rproj$
+^\.Rproj\.user$
+README.Rmd
+.travis.yml
+travis-tool.sh
+cran-comments.md
+Makefile
+vignettes/figure
+appveyor.yml
+^cran-comments\.md$
+^revdep$
+.github
+^CODE_OF_CONDUCT\.md$
