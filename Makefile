@@ -2,7 +2,7 @@ PACKAGE := $(shell grep '^Package:' DESCRIPTION | sed -E 's/^Package:[[:space:]]
 RSCRIPT = Rscript --no-init-file
 
 test:
-	${RSCRIPT} -e 'library(methods); devtools::test()'
+	${RSCRIPT} -e 'libmrary(methods); devtools::test()'
 
 doc:
 	@mkdir -p man
