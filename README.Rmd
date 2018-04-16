@@ -18,17 +18,73 @@ knitr::opts_chunk$set(
 
 `rbraries` is a client for interacting with the Libraries.io API <https://libraries.io/api>
 
+
+Package API:
+
+```{r echo=FALSE, comment=NA, results='asis'}
+cat(paste(" -", paste(grep("lio", sprintf("`%s`", getNamespaceExports("rbraries")), value = TRUE), collapse = "\n - ")))
+```
+
+As you can see all functions are prefixed with `lio_` to avoid namespace conflicts with other R packages.
+
+## Authentication
+
+You need an API key to use this package. Get one by logging in to 
+<https://libraries.io> (they have GitHub login and others), then go to your 
+Settings page, then scroll down to API key section and grab your
+key. 
+
+You can pass the key into function calls, but that's not recommended.
+Store your key by putting in your .Renviron file or similar file like
+e.g. .zshrc or .bash_profile, etc. We'll grab that key so that you 
+don't have to pass it into each function call.
+
 ## Installation
+
+CRAN version
+
+```{r eval=FALSE}
+install.packages("rbraries")
+```
 
 Development version
 
 ```{r eval=FALSE}
-install.packages("devtools")
-devtools::install_github("ropenscilabs/rbraries")
+remotes::install_github("ropenscilabs/rbraries")
 ```
 
 ```{r}
 library('rbraries')
+```
+
+## platforms
+
+```{r}
+lio_platforms()$name
+```
+
+## projects
+
+```{r}
+lio_project_dependents('npm', 'grunt', per_page = 3)
+```
+
+## repositories
+
+```{r}
+lio_repo_projects('gruntjs', 'grunt', per_page = 2)
+```
+
+## subscriptions
+
+```{r eval=FALSE}
+lio_subscribe("rubygems", "webmock")
+```
+
+## user methods
+
+```{r}
+lio_user('github')
 ```
 
 ## Meta
@@ -38,3 +94,5 @@ library('rbraries')
 * Get citation information for `rbraries` in R doing `citation(package = 'rbraries')`
 * Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By participating in this project you agree to abide by its terms.
+
+[![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
