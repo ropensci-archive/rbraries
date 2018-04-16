@@ -11,7 +11,7 @@
 * Make sure to track progress upstream (i.e., on our version of `rbraries` at `ropenscilabs/rbraries`) by doing `git remote add upstream https://github.com/ropenscilabs/rbraries.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step
 * Make your changes (bonus points for making changes on a new feature branch)
 * Push up to your account
-* Submit a pull request to home base at `ropensci/rbraries`
+* Submit a pull request to home base at `ropenscilabs/rbraries`
 
 ### Also, check out our [discussion forum](https://discuss.ropensci.org)
 
