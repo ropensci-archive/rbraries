@@ -1,6 +1,6 @@
-context("platforms")
+context("lio_platforms")
 
-test_that("platforms works correctly", {
+test_that("lio_platforms works", {
   skip_on_cran()
   
   a <- lio_platforms()

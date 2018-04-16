@@ -7,9 +7,10 @@
 lio_platforms(key = NULL, ...)
 }
 \arguments{
-\item{key}{your Libraries.io API key. optional}
+\item{key}{your Libraries.io API key. See `Auth` section in \pkg{rbraries}
+manual file. optional}
 
-\item{...}{curl options passed on to \link[crul:HttpClient]{crul::HttpClient}}
+\item{...}{curl options passed on to \code{\link[crul]{HttpClient}}}
 }
 \description{
 Platforms

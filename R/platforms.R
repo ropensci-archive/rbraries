@@ -1,8 +1,7 @@
 #' Platforms
 #' 
 #' @export
-#' @param key your Libraries.io API key. optional
-#' @param ... curl options passed on to [crul::HttpClient]
+#' @template args
 #' @examples \dontrun{
 #' lio_platforms()
 #' }

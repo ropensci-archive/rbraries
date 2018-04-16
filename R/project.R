@@ -13,9 +13,7 @@
 #' @param licenses (character) a license name. optional
 #' @param keywords (character) a keyword. optional
 #' @param platforms (character) a platform name. optional
-#' @param key your Libraries.io API key. See `Auth` section in [rbraries] 
-#' manual file. optional
-#' @param ... curl options passed on to [crul::HttpClient]
+#' @template args
 #' @examples \dontrun{
 #' # project summary
 #' lio_project('npm', 'grunt')
@@ -48,7 +46,7 @@ lio_project <- function(platform, name, key = NULL, ...) {
   assert(key, "character")
 
   args <- vc(list(api_key = check_key_lio(key)))
-  json_prx(lio_GET(sprintf("api/%s/%s/", platform, name), args = args, ...))
+  json_parse(lio_GET(sprintf("api/%s/%s/", platform, name), args = args, ...))
 }
 
 #' @export
@@ -62,7 +60,7 @@ lio_project_dependencies <- function(platform, name,
   assert(key, "character")
 
   args <- vc(list(api_key = check_key_lio(key)))
-  json_prx(lio_GET(sprintf("api/%s/%s/%s/dependencies", platform, name, version), 
+  json_parse(lio_GET(sprintf("api/%s/%s/%s/dependencies", platform, name, version), 
     args = args, ...))
 }
 
@@ -74,7 +72,7 @@ lio_project_dependents <- function(platform, name, key = NULL, ...) {
   assert(key, "character")
 
   args <- vc(list(api_key = check_key_lio(key)))
-  json_prx(lio_GET(sprintf("api/%s/%s/dependents", platform, name), 
+  json_parse(lio_GET(sprintf("api/%s/%s/dependents", platform, name), 
     args = args, ...))
 }
 
@@ -86,7 +84,7 @@ lio_project_dependent_repos <- function(platform, name, key = NULL, ...) {
   assert(key, "character")
 
   args <- vc(list(api_key = check_key_lio(key)))
-  json_prx(lio_GET(sprintf("api/%s/%s/dependent_repositories", platform, name), 
+  json_parse(lio_GET(sprintf("api/%s/%s/dependent_repositories", platform, name), 
     args = args, ...))
 }
 
@@ -98,7 +96,7 @@ lio_project_contribs <- function(platform, name, key = NULL, ...) {
   assert(key, "character")
 
   args <- vc(list(api_key = check_key_lio(key)))
-  json_prx(lio_GET(sprintf("api/%s/%s/contributors", platform, name), 
+  json_parse(lio_GET(sprintf("api/%s/%s/contributors", platform, name), 
     args = args, ...))
 }
 
@@ -110,7 +108,7 @@ lio_project_sourcerank <- function(platform, name, key = NULL, ...) {
   assert(key, "character")
 
   args <- vc(list(api_key = check_key_lio(key)))
-  json_prx(lio_GET(sprintf("api/%s/%s/sourcerank", platform, name), 
+  json_parse(lio_GET(sprintf("api/%s/%s/sourcerank", platform, name), 
     args = args, ...))
 }
 
@@ -130,5 +128,5 @@ lio_project_search <- function(q = NULL, sort = NULL, languages = NULL,
   args <- vc(list(q = q, sort = sort, languages = languages, 
     licenses = licenses, keywords = key, platforms = platforms,
     api_key = check_key_lio(key)))
-  json_prx(lio_GET("api/search", args = args, ...))
+  json_parse(lio_GET("api/search", args = args, ...))
 }

@@ -13,7 +13,7 @@ and keep track of ones you depend upon."
 \section{Auth}{
 
 You need an API key to use this package. Get one by logging in to
-Libraries.io (they have Github login and others), then go to your
+Libraries.io (they have GitHub login and others), then go to your
 Settings page, then scroll down to API key section and grab your
 key.
 

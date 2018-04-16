@@ -32,10 +32,10 @@ lio_project_search(q = NULL, sort = NULL, languages = NULL,
 
 \item{name}{(character) a project name. required}
 
-\item{key}{your Libraries.io API key. See \code{Auth} section in \link{rbraries}
+\item{key}{your Libraries.io API key. See `Auth` section in \pkg{rbraries}
 manual file. optional}
 
-\item{...}{curl options passed on to \link[crul:HttpClient]{crul::HttpClient}}
+\item{...}{curl options passed on to \code{\link[crul]{HttpClient}}}
 
 \item{version}{(character) a version string. optional}
 

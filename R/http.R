@@ -15,9 +15,44 @@ lio_GET <- function(path, args = list(), ...) {
   res$parse("UTF-8")
 }
 
+lio_POST <- function(path, args = list(), ...) {
+  cli <- crul::HttpClient$new(
+    url = lio_base(), 
+    headers = list(`User-Agent` = make_ua()),
+    opts = list(...)
+  )
+  res <- cli$post(path, query = args)
+  errs(res)
+  res$parse("UTF-8")
+}
+
+lio_PUT <- function(path, args = list(), ...) {
+  cli <- crul::HttpClient$new(
+    url = lio_base(), 
+    headers = list(`User-Agent` = make_ua()),
+    opts = list(...)
+  )
+  res <- cli$put(path, query = args)
+  errs(res)
+  res$parse("UTF-8")
+}
+
+lio_DELETE <- function(path, args = list(), ...) {
+  cli <- crul::HttpClient$new(
+    url = lio_base(), 
+    headers = list(`User-Agent` = make_ua()),
+    opts = list(...)
+  )
+  res <- cli$delete(path, query = args)
+  if (res$status_code == 204) return(TRUE)
+  errs(res)
+}
+
 errs <- function(x) {
   if (x$status_code > 201) {
-    xx <- jsonlite::fromJSON(x$parse("UTF-8"))
+    txt <- x$parse("UTF-8")
+    if (txt == "") x$raise_for_status()
+    xx <- jsonlite::fromJSON(txt)
     if ("error" %in% names(xx)) {
       # match by status code
       fun <- match_err(x$status_code)$new()
@@ -44,7 +79,7 @@ json_parse <- function(x, flatten = TRUE) {
 
 json_prx <- function(x) {
   tmp <- jsonlite::fromJSON(x, flatten = TRUE)
-  Map(function(x) if (is.null(x)) NA else x, tmp)
+  Map(function(x) if (is.null(x)) NA_character_ else x, tmp)
 }
 
 proc_many <- function(x) {
