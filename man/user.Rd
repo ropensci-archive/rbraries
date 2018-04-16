@@ -11,27 +11,36 @@
 \alias{lio_user_dependencies}
 \title{User}
 \usage{
-user_template_fun(route)
+user_template_fun(route, pg = FALSE)
 
 lio_user(login, key = NULL, ...)
 
-lio_user_repositories(login, key = NULL, ...)
+lio_user_repositories(login, page = 1, per_page = 30, key = NULL, ...)
 
-lio_user_pkgs(login, key = NULL, ...)
+lio_user_pkgs(login, page = 1, per_page = 30, key = NULL, ...)
 
-lio_user_pkg_contributions(login, key = NULL, ...)
+lio_user_pkg_contributions(login, page = 1, per_page = 30, key = NULL,
+  ...)
 
-lio_user_repo_contributions(login, key = NULL, ...)
+lio_user_repo_contributions(login, page = 1, per_page = 30, key = NULL,
+  ...)
 
-lio_user_dependencies(login, key = NULL, ...)
+lio_user_dependencies(login, page = 1, per_page = 30, key = NULL, ...)
 }
 \arguments{
+\item{route, pg}{IGNORED.}
+
 \item{login}{(character) a github login name. required}
 
 \item{key}{your Libraries.io API key. See `Auth` section in \pkg{rbraries}
 manual file. optional}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}}}
+
+\item{page}{(integer) page to return. Default: 1}
+
+\item{per_page}{(integer) number of records to return per page. 
+Maximum: 100. Default: 30}
 }
 \description{
 User
@@ -42,18 +51,18 @@ User
 lio_user('ropensci')
 
 # repositories
-lio_user_repositories('ropensci')
+lio_user_repositories('ropensci', per_page = 3)
 
 # packages/projects
-lio_user_pkgs('ropensci')
+lio_user_pkgs('ropensci', per_page = 3)
 
 # package/project contributions
-lio_user_pkg_contributions('ropensci')
+lio_user_pkg_contributions('sckott', per_page = 3)
 
 # contributions
-lio_user_repo_contributions('ropensci')
+lio_user_repo_contributions('sckott', per_page = 3)
 
 # dependencies
-lio_user_dependencies('ropensci')
+lio_user_dependencies('ropensci', per_page = 3)
 }
 }

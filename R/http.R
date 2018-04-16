@@ -50,9 +50,8 @@ lio_DELETE <- function(path, args = list(), ...) {
 
 errs <- function(x) {
   if (x$status_code > 201) {
-    txt <- x$parse("UTF-8")
-    if (txt == "") x$raise_for_status()
-    xx <- jsonlite::fromJSON(txt)
+    xx <- tryCatch(jsonlite::fromJSON(x$parse("UTF-8")), error = function(e) e)
+    if (inherits(xx, "error")) x$raise_for_status()
     if ("error" %in% names(xx)) {
       # match by status code
       fun <- match_err(x$status_code)$new()

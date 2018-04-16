@@ -2,7 +2,6 @@
 #' 
 #' @export
 #' @name subscriptions
-#' @param login (character) a github login name. required
 #' @param platform (character) a platform. required
 #' @param name (character) a project name. required
 #' @param include_prerelease (logical) include prerelease? default: `FALSE`

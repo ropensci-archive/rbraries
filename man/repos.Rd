@@ -11,7 +11,7 @@ lio_repo(owner, name, key = NULL, ...)
 
 lio_repo_dependencies(owner, name, key = NULL, ...)
 
-lio_repo_projects(owner, name, key = NULL, ...)
+lio_repo_projects(owner, name, page = 1, per_page = 30, key = NULL, ...)
 }
 \arguments{
 \item{owner}{(character) a github owner name. required}
@@ -22,6 +22,11 @@ lio_repo_projects(owner, name, key = NULL, ...)
 manual file. optional}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}}}
+
+\item{page}{(integer) page to return. Default: 1}
+
+\item{per_page}{(integer) number of records to return per page. 
+Maximum: 100. Default: 30}
 }
 \description{
 Repositories
@@ -33,8 +38,9 @@ lio_repo('ropensci', 'wellknown')
 
 # dependencies
 lio_repo_dependencies('ropensci', 'wellknown')
+lio_repo_dependencies('gruntjs', 'grunt')
 
 # dependents
-lio_repo_projects('ropensci', 'wellknown')
+lio_repo_projects('gruntjs', 'grunt', per_page = 2)
 }
 }

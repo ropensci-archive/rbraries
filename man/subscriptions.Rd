@@ -3,19 +3,20 @@
 \name{subscriptions}
 \alias{subscriptions}
 \alias{lio_subscriptions}
-\alias{lio_subscribe}
 \alias{lio_subscribed}
+\alias{lio_subscribe}
 \alias{lio_subscription_update}
 \alias{lio_subscription_delete}
 \title{Subscriptions}
 \usage{
 lio_subscriptions(key = NULL, ...)
 
-lio_subscribe(platform, name, key = NULL, ...)
-
 lio_subscribed(platform, name, key = NULL, ...)
 
-lio_subscription_update(platform, name, key = NULL, ...)
+lio_subscribe(platform, name, include_prerelease = FALSE, key = NULL, ...)
+
+lio_subscription_update(platform, name, include_prerelease = FALSE,
+  key = NULL, ...)
 
 lio_subscription_delete(platform, name, key = NULL, ...)
 }
@@ -29,8 +30,6 @@ manual file. optional}
 
 \item{name}{(character) a project name. required}
 
-\item{login}{(character) a github login name. required}
-
 \item{include_prerelease}{(logical) include prerelease? default: \code{FALSE}}
 }
 \description{
@@ -38,7 +37,19 @@ Subscriptions
 }
 \examples{
 \dontrun{
-# list authenticated user Libraries.io subscriptions
-lio_subscriptions('ropensci')
+# authenticated user Libraries.io subscriptions
+lio_subscriptions()
+
+# check if you are subscribed to a project
+lio_subscribed("rubygems", "webmock")
+
+# subscribe to a project
+lio_subscribe(platform = "rubygems", name = "webmock")
+
+# update subscription to a project
+lio_subscription_update("rubygems", "webmock")
+
+# delete subscription to a project
+lio_subscription_delete("rubygems", "webmock")
 }
 }

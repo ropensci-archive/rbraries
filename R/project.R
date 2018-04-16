@@ -14,6 +14,7 @@
 #' @param keywords (character) a keyword. optional
 #' @param platforms (character) a platform name. optional
 #' @template args
+#' @template pagination
 #' @examples \dontrun{
 #' # project summary
 #' lio_project('npm', 'grunt')
@@ -24,6 +25,7 @@
 #' 
 #' # dependents
 #' lio_project_dependents('npm', 'grunt')
+#' lio_project_dependents('npm', 'grunt', per_page = 3)
 #' 
 #' # dependent repositories
 #' lio_project_dependent_repos('npm', 'turf')
@@ -35,7 +37,7 @@
 #' lio_project_sourcerank('npm', 'turf')
 #' 
 #' # search
-#' lio_project_search(q = 'grunt')
+#' lio_project_search(q = 'grunt', per_page = 3)
 #' }
 
 #' @export
@@ -60,43 +62,60 @@ lio_project_dependencies <- function(platform, name,
   assert(key, "character")
 
   args <- vc(list(api_key = check_key_lio(key)))
-  json_parse(lio_GET(sprintf("api/%s/%s/%s/dependencies", platform, name, version), 
+  json_parse(lio_GET(
+    sprintf("api/%s/%s/%s/dependencies", platform, name, version), 
     args = args, ...))
 }
 
 #' @export
 #' @rdname projects
-lio_project_dependents <- function(platform, name, key = NULL, ...) {
+lio_project_dependents <- function(platform, name, page = 1, per_page = 30, 
+  key = NULL, ...) {
+
   assert(platform, "character")
   assert(name, "character")
+  assert(page, c('integer', 'numeric'))
+  assert(per_page, c('integer', 'numeric'))
   assert(key, "character")
 
-  args <- vc(list(api_key = check_key_lio(key)))
+  args <- vc(list(api_key = check_key_lio(key), page = page, 
+    per_page = per_page))
   json_parse(lio_GET(sprintf("api/%s/%s/dependents", platform, name), 
     args = args, ...))
 }
 
 #' @export
 #' @rdname projects
-lio_project_dependent_repos <- function(platform, name, key = NULL, ...) {
+lio_project_dependent_repos <- function(platform, name, page = 1, 
+  per_page = 30, key = NULL, ...) {
+
   assert(platform, "character")
   assert(name, "character")
+  assert(page, c('integer', 'numeric'))
+  assert(per_page, c('integer', 'numeric'))
   assert(key, "character")
 
-  args <- vc(list(api_key = check_key_lio(key)))
-  json_parse(lio_GET(sprintf("api/%s/%s/dependent_repositories", platform, name), 
+  args <- vc(list(api_key = check_key_lio(key), page = page, 
+    per_page = per_page))
+  json_parse(lio_GET(
+    sprintf("api/%s/%s/dependent_repositories", platform, name), 
     args = args, ...))
 }
 
 #' @export
 #' @rdname projects
-lio_project_contribs <- function(platform, name, key = NULL, ...) {
+lio_project_contribs <- function(platform, name, page = 1, per_page = 30, 
+  key = NULL, ...) {
+
   assert(platform, "character")
   assert(name, "character")
+  assert(page, c('integer', 'numeric'))
+  assert(per_page, c('integer', 'numeric'))
   assert(key, "character")
 
-  args <- vc(list(api_key = check_key_lio(key)))
-  json_parse(lio_GET(sprintf("api/%s/%s/contributors", platform, name), 
+  args <- vc(list(api_key = check_key_lio(key), page = page, 
+    per_page = per_page))
+  json_parse(lio_GET(sprintf("api/%s/%s/contributors", platform, name),
     args = args, ...))
 }
 
@@ -115,7 +134,8 @@ lio_project_sourcerank <- function(platform, name, key = NULL, ...) {
 #' @export
 #' @rdname projects
 lio_project_search <- function(q = NULL, sort = NULL, languages = NULL, 
-  licenses = NULL, keywords = NULL, platforms = NULL, key = NULL, ...) {
+  licenses = NULL, keywords = NULL, platforms = NULL, page = 1, 
+  per_page = 30, key = NULL, ...) {
 
   assert(q, "character")
   assert(sort, "character")
@@ -123,10 +143,12 @@ lio_project_search <- function(q = NULL, sort = NULL, languages = NULL,
   assert(licenses, "character")
   assert(keywords, "character")
   assert(platforms, "character")
+  assert(page, c('integer', 'numeric'))
+  assert(per_page, c('integer', 'numeric'))
   assert(key, "character")
 
   args <- vc(list(q = q, sort = sort, languages = languages, 
     licenses = licenses, keywords = key, platforms = platforms,
-    api_key = check_key_lio(key)))
+    page = page, per_page = per_page, api_key = check_key_lio(key)))
   json_parse(lio_GET("api/search", args = args, ...))
 }
