@@ -10,8 +10,6 @@ test_that("lio_user works", {
   expect_equal(a$name, "rOpenSci")
 })
 test_that("lio_user fails well", {
-  skip_on_cran()
-  
   expect_error(lio_user(), "argument \"login\" is missing")
 })
 
@@ -27,8 +25,6 @@ test_that("lio_user_repositories works", {
   expect_match(a$full_name, "ropensci")
 })
 test_that("lio_user_repositories fails well", {
-  skip_on_cran()
-  
   expect_error(lio_user_repositories(), "argument \"login\" is missing")
   expect_error(lio_user_repositories("ropensci", page = "foobar"), 
     "page must be of class integer, numeric")
@@ -48,8 +44,6 @@ test_that("lio_user_pkgs works", {
   expect_match(a$package_manager_url, "cran")
 })
 test_that("lio_user_pkgs fails well", {
-  skip_on_cran()
-  
   expect_error(lio_user_pkgs(), "argument \"login\" is missing")
   expect_error(lio_user_pkgs("ropensci", page = "foobar"), 
     "page must be of class integer, numeric")
@@ -70,8 +64,6 @@ test_that("lio_user_pkg_contributions works", {
   expect_is(a$versions[[1]], "data.frame")
 })
 test_that("lio_user_pkg_contributions fails well", {
-  skip_on_cran()
-  
   expect_error(lio_user_pkg_contributions(), "argument \"login\" is missing")
   expect_error(lio_user_pkg_contributions("ropensci", page = "foobar"), 
     "page must be of class integer, numeric")
@@ -91,8 +83,6 @@ test_that("lio_user_repo_contributions works", {
   expect_is(a$full_name, "character")
 })
 test_that("lio_user_repo_contributions fails well", {
-  skip_on_cran()
-  
   expect_error(lio_user_repo_contributions(), "argument \"login\" is missing")
   expect_error(lio_user_repo_contributions("ropensci", page = "foobar"), 
     "page must be of class integer, numeric")
@@ -113,8 +103,6 @@ test_that("lio_user_dependencies works", {
   expect_is(a$versions, "list")
 })
 test_that("lio_user_dependencies fails well", {
-  skip_on_cran()
-  
   expect_error(lio_user_dependencies(), "argument \"login\" is missing")
   expect_error(lio_user_dependencies("ropensci", page = "foobar"), 
     "page must be of class integer, numeric")

@@ -9,8 +9,6 @@ test_that("lio_repo works", {
   expect_equal(a$has_license, "LICENSE")
 })
 test_that("lio_repo fails well", {
-  skip_on_cran()
-  
   expect_error(lio_repo(), "argument \"owner\" is missing")
   expect_error(lio_repo("foobar"), "argument \"name\" is missing")
 })
@@ -26,8 +24,6 @@ test_that("lio_repo_dependencies works", {
   expect_is(a$dependencies, "data.frame")
 })
 test_that("lio_repo_dependencies fails well", {
-  skip_on_cran()
-  
   expect_error(lio_repo_dependencies(), "argument \"owner\" is missing")
   expect_error(lio_repo_dependencies("foobar"), "argument \"name\" is missing")
 })
@@ -44,8 +40,6 @@ test_that("lio_repo_projects works", {
   expect_equal(NROW(a), 2)
 })
 test_that("lio_repo_projects fails well", {
-  skip_on_cran()
-  
   expect_error(lio_repo_projects(), "argument \"owner\" is missing")
   expect_error(lio_repo_projects("foobar"), "argument \"name\" is missing")
   expect_error(lio_repo_projects("foo", "bar", page = "foobar"), 

@@ -2,7 +2,7 @@ Package: rbraries
 Title: Interface to the "Libraries.io" "API"
 Description: Interface to the "Libraries.io" "API" (<https://libraries.io/api>).
     "Libraries.io" indexes data from 36 different package managers for 
-    programming languages, including "R", and exposes that data in an "API".
+    programming languages.
 Version: 0.1.0
 Author: Scott Chamberlain [aut, cre]
 Maintainer: Scott Chamberlain <myrmecocystus+r@gmail.com>

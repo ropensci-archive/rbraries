@@ -10,8 +10,6 @@ test_that("lio_project works", {
   expect_equal(a$platform, "NPM")
 })
 test_that("lio_project fails well", {
-  skip_on_cran()
-  
   expect_error(lio_project(), "argument \"platform\" is missing")
   expect_error(lio_project("npm"), "argument \"name\" is missing")
 })
@@ -30,8 +28,6 @@ test_that("lio_project_dependencies works", {
   expect_equal(a$platform, "NPM")
 })
 test_that("lio_project_dependencies fails well", {
-  skip_on_cran()
-  
   expect_error(lio_project_dependencies(), "argument \"platform\" is missing")
   expect_error(lio_project_dependencies("npm"), "argument \"name\" is missing")
 })
@@ -48,8 +44,6 @@ test_that("lio_project_dependents works", {
   expect_is(a$versions[[1]], "data.frame")
 })
 test_that("lio_project_dependents fails well", {
-  skip_on_cran()
-  
   expect_error(lio_project_dependents(), "argument \"platform\" is missing")
   expect_error(lio_project_dependents("npm"), "argument \"name\" is missing")
 })
@@ -64,8 +58,6 @@ test_that("lio_project_dependent_repos works", {
   expect_is(a, "data.frame")
 })
 test_that("lio_project_dependent_repos fails well", {
-  skip_on_cran()
-  
   expect_error(lio_project_dependent_repos(), "argument \"platform\" is missing")
   expect_error(lio_project_dependent_repos("npm"), "argument \"name\" is missing")
 })
@@ -84,8 +76,6 @@ test_that("lio_project_contribs works", {
   expect_gt(length(names(a)[names(a) %in% c('github_id', 'login', 'user_type', 'name')]), 1)
 })
 test_that("lio_project_contribs fails well", {
-  skip_on_cran()
-  
   expect_error(lio_project_contribs(), "argument \"platform\" is missing")
   expect_error(lio_project_contribs("npm"), "argument \"name\" is missing")
 })
@@ -103,8 +93,6 @@ test_that("lio_project_sourcerank works", {
   expect_equal(a$follows_semver, 1)
 })
 test_that("lio_project_sourcerank fails well", {
-  skip_on_cran()
-  
   expect_error(lio_project_sourcerank(), "argument \"platform\" is missing")
   expect_error(lio_project_sourcerank("npm"), "argument \"name\" is missing")
 })
@@ -124,8 +112,6 @@ test_that("lio_project_search works", {
   expect_named(a$versions[[1]], c('number', 'published_at'))
 })
 test_that("lio_project_search fails well", {
-  skip_on_cran()
-  
   expect_error(lio_project_search(5), "q must be of class character")
   expect_error(lio_project_search(sort = 5), "sort must be of class character")
   expect_error(lio_project_search(languages = 5), "languages must be of class character")
