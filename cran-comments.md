@@ -20,6 +20,8 @@ This is a new submission, so there are no reverse dependencies.
 
 --------
 
+This is a re-submission of this package, without quoting API in the DESCRIPTION file.
+
 This is a new release. I have read and agree to the the CRAN policies at https://cran.r-project.org/web/packages/policies.html
 
 Thanks!
