@@ -11,7 +11,7 @@
 #' key. 
 #' 
 #' You can pass the key into function calls, but that's not recommended.
-#' Store your key by putting in your .Renviron file or similar file like
+#' Store your key by putting a `LIBRARIES_IO_KEY` entry in your .Renviron file or similar file like
 #' e.g. .zshrc or .bash_profile, etc. We'll grab that key so that you 
 #' don't have to pass it into each function call.
 #' 
