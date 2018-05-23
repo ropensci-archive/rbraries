@@ -3,8 +3,8 @@ rbraries
 
 
 
-[![Build Status](https://travis-ci.org/ropenscilabs/rbraries.svg?branch=master)](https://travis-ci.org/ropenscilabs/rbraries)
-[![codecov.io](https://codecov.io/github/ropenscilabs/rbraries/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/rbraries?branch=master)
+[![Build Status](https://travis-ci.org/ropensci/rbraries.svg?branch=master)](https://travis-ci.org/ropensci/rbraries)
+[![codecov.io](https://codecov.io/github/ropensci/rbraries/coverage.svg?branch=master)](https://codecov.io/github/ropensci/rbraries?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/rbraries?color=2ECC71)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/rbraries)](https://cran.r-project.org/package=rbraries)
 
@@ -64,7 +64,7 @@ Development version
 
 
 ```r
-remotes::install_github("ropenscilabs/rbraries")
+remotes::install_github("ropensci/rbraries")
 ```
 
 
@@ -251,7 +251,7 @@ lio_user('github')
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/rbraries/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/rbraries/issues).
 * License: MIT
 * Get citation information for `rbraries` in R doing `citation(package = 'rbraries')`
 * Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
