@@ -10,6 +10,7 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![cran checks](https://cranchecks.info/badges/worst/rbraries)](https://cranchecks.info/pkgs/rbraries)
 [![Build Status](https://travis-ci.org/ropensci/rbraries.svg?branch=master)](https://travis-ci.org/ropensci/rbraries)
 [![codecov.io](https://codecov.io/github/ropensci/rbraries/coverage.svg?branch=master)](https://codecov.io/github/ropensci/rbraries?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/rbraries?color=2ECC71)](https://github.com/metacran/cranlogs.app)
