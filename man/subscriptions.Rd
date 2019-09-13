@@ -13,7 +13,8 @@ lio_subscriptions(key = NULL, ...)
 
 lio_subscribed(platform, name, key = NULL, ...)
 
-lio_subscribe(platform, name, include_prerelease = FALSE, key = NULL, ...)
+lio_subscribe(platform, name, include_prerelease = FALSE, key = NULL,
+  ...)
 
 lio_subscription_update(platform, name, include_prerelease = FALSE,
   key = NULL, ...)
@@ -21,7 +22,7 @@ lio_subscription_update(platform, name, include_prerelease = FALSE,
 lio_subscription_delete(platform, name, key = NULL, ...)
 }
 \arguments{
-\item{key}{your Libraries.io API key. See `Auth` section in \pkg{rbraries}
+\item{key}{your Libraries.io API key. See \code{Auth} section in \pkg{rbraries}
 manual file. optional}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}}}

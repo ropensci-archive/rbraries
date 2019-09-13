@@ -15,31 +15,33 @@ user_template_fun(route, pg = FALSE)
 
 lio_user(login, key = NULL, ...)
 
-lio_user_repositories(login, page = 1, per_page = 30, key = NULL, ...)
+lio_user_repositories(login, page = 1, per_page = 30, key = NULL,
+  ...)
 
 lio_user_pkgs(login, page = 1, per_page = 30, key = NULL, ...)
 
-lio_user_pkg_contributions(login, page = 1, per_page = 30, key = NULL,
-  ...)
+lio_user_pkg_contributions(login, page = 1, per_page = 30,
+  key = NULL, ...)
 
-lio_user_repo_contributions(login, page = 1, per_page = 30, key = NULL,
-  ...)
+lio_user_repo_contributions(login, page = 1, per_page = 30,
+  key = NULL, ...)
 
-lio_user_dependencies(login, page = 1, per_page = 30, key = NULL, ...)
+lio_user_dependencies(login, page = 1, per_page = 30, key = NULL,
+  ...)
 }
 \arguments{
 \item{route, pg}{IGNORED.}
 
 \item{login}{(character) a github login name. required}
 
-\item{key}{your Libraries.io API key. See `Auth` section in \pkg{rbraries}
+\item{key}{your Libraries.io API key. See \code{Auth} section in \pkg{rbraries}
 manual file. optional}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}}}
 
 \item{page}{(integer) page to return. Default: 1}
 
-\item{per_page}{(integer) number of records to return per page. 
+\item{per_page}{(integer) number of records to return per page.
 Maximum: 100. Default: 30}
 }
 \description{

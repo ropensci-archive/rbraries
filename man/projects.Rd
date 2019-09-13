@@ -13,8 +13,8 @@
 \usage{
 lio_project(platform, name, key = NULL, ...)
 
-lio_project_dependencies(platform, name, version = "latest", key = NULL,
-  ...)
+lio_project_dependencies(platform, name, version = "latest",
+  key = NULL, ...)
 
 lio_project_dependents(platform, name, page = 1, per_page = 30,
   key = NULL, ...)
@@ -22,8 +22,8 @@ lio_project_dependents(platform, name, page = 1, per_page = 30,
 lio_project_dependent_repos(platform, name, page = 1, per_page = 30,
   key = NULL, ...)
 
-lio_project_contribs(platform, name, page = 1, per_page = 30, key = NULL,
-  ...)
+lio_project_contribs(platform, name, page = 1, per_page = 30,
+  key = NULL, ...)
 
 lio_project_sourcerank(platform, name, key = NULL, ...)
 
@@ -36,7 +36,7 @@ lio_project_search(q = NULL, sort = NULL, languages = NULL,
 
 \item{name}{(character) a project name. required}
 
-\item{key}{your Libraries.io API key. See `Auth` section in \pkg{rbraries}
+\item{key}{your Libraries.io API key. See \code{Auth} section in \pkg{rbraries}
 manual file. optional}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}}}
@@ -45,7 +45,7 @@ manual file. optional}
 
 \item{page}{(integer) page to return. Default: 1}
 
-\item{per_page}{(integer) number of records to return per page. 
+\item{per_page}{(integer) number of records to return per page.
 Maximum: 100. Default: 30}
 
 \item{q}{(character) a query string. optional}

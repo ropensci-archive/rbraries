@@ -10,6 +10,7 @@ License: MIT + file LICENSE
 URL: https://github.com/ropensci/rbraries
 BugReports: https://github.com/ropensci/rbraries/issues
 Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
 Imports:
     jsonlite (>= 1.5),
     crul (>= 0.5.0),
@@ -18,7 +19,7 @@ Imports:
     tibble
 Suggests:
     testthat
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 X-schema.org-applicationCategory: Web
 X-schema.org-keywords: http, API, web-services, package, software, metadata
 X-schema.org-isPartOf: https://ropensci.org
