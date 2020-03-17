@@ -13,11 +13,15 @@ lio_subscriptions(key = NULL, ...)
 
 lio_subscribed(platform, name, key = NULL, ...)
 
-lio_subscribe(platform, name, include_prerelease = FALSE, key = NULL,
-  ...)
+lio_subscribe(platform, name, include_prerelease = FALSE, key = NULL, ...)
 
-lio_subscription_update(platform, name, include_prerelease = FALSE,
-  key = NULL, ...)
+lio_subscription_update(
+  platform,
+  name,
+  include_prerelease = FALSE,
+  key = NULL,
+  ...
+)
 
 lio_subscription_delete(platform, name, key = NULL, ...)
 }

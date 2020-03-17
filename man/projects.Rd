@@ -13,23 +13,42 @@
 \usage{
 lio_project(platform, name, key = NULL, ...)
 
-lio_project_dependencies(platform, name, version = "latest",
-  key = NULL, ...)
+lio_project_dependencies(platform, name, version = "latest", key = NULL, ...)
 
-lio_project_dependents(platform, name, page = 1, per_page = 30,
-  key = NULL, ...)
+lio_project_dependents(
+  platform,
+  name,
+  page = 1,
+  per_page = 30,
+  key = NULL,
+  ...
+)
 
-lio_project_dependent_repos(platform, name, page = 1, per_page = 30,
-  key = NULL, ...)
+lio_project_dependent_repos(
+  platform,
+  name,
+  page = 1,
+  per_page = 30,
+  key = NULL,
+  ...
+)
 
-lio_project_contribs(platform, name, page = 1, per_page = 30,
-  key = NULL, ...)
+lio_project_contribs(platform, name, page = 1, per_page = 30, key = NULL, ...)
 
 lio_project_sourcerank(platform, name, key = NULL, ...)
 
-lio_project_search(q = NULL, sort = NULL, languages = NULL,
-  licenses = NULL, keywords = NULL, platforms = NULL, page = 1,
-  per_page = 30, key = NULL, ...)
+lio_project_search(
+  q = NULL,
+  sort = NULL,
+  languages = NULL,
+  licenses = NULL,
+  keywords = NULL,
+  platforms = NULL,
+  page = 1,
+  per_page = 30,
+  key = NULL,
+  ...
+)
 }
 \arguments{
 \item{platform}{(character) a platform. required}

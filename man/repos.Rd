@@ -11,8 +11,7 @@ lio_repo(owner, name, key = NULL, ...)
 
 lio_repo_dependencies(owner, name, key = NULL, ...)
 
-lio_repo_projects(owner, name, page = 1, per_page = 30, key = NULL,
-  ...)
+lio_repo_projects(owner, name, page = 1, per_page = 30, key = NULL, ...)
 }
 \arguments{
 \item{owner}{(character) a github owner name. required}

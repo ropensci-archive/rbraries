@@ -15,19 +15,15 @@ user_template_fun(route, pg = FALSE)
 
 lio_user(login, key = NULL, ...)
 
-lio_user_repositories(login, page = 1, per_page = 30, key = NULL,
-  ...)
+lio_user_repositories(login, page = 1, per_page = 30, key = NULL, ...)
 
 lio_user_pkgs(login, page = 1, per_page = 30, key = NULL, ...)
 
-lio_user_pkg_contributions(login, page = 1, per_page = 30,
-  key = NULL, ...)
+lio_user_pkg_contributions(login, page = 1, per_page = 30, key = NULL, ...)
 
-lio_user_repo_contributions(login, page = 1, per_page = 30,
-  key = NULL, ...)
+lio_user_repo_contributions(login, page = 1, per_page = 30, key = NULL, ...)
 
-lio_user_dependencies(login, page = 1, per_page = 30, key = NULL,
-  ...)
+lio_user_dependencies(login, page = 1, per_page = 30, key = NULL, ...)
 }
 \arguments{
 \item{route, pg}{IGNORED.}

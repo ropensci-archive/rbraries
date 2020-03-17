@@ -3,7 +3,7 @@ Title: Interface to the 'Libraries.io' API
 Description: Interface to the 'Libraries.io' API (<https://libraries.io/api>).
     'Libraries.io' indexes data from 36 different package managers for 
     programming languages.
-Version: 0.1.0.9110
+Version: 0.2.0
 Author: Scott Chamberlain [aut, cre]
 Maintainer: Scott Chamberlain <myrmecocystus+r@gmail.com>
 License: MIT + file LICENSE
@@ -11,15 +11,16 @@ URL: https://docs.ropensci.org/rbraries, https://github.com/ropensci/rbraries
 BugReports: https://github.com/ropensci/rbraries/issues
 Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
+Language: en-US
 Imports:
-    jsonlite (>= 1.5),
-    crul (>= 0.5.0),
+    jsonlite,
+    crul,
     fauxpas,
     data.table,
     tibble
 Suggests:
     testthat
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
 X-schema.org-applicationCategory: Web
 X-schema.org-keywords: http, API, web-services, package, software, metadata
 X-schema.org-isPartOf: https://ropensci.org
