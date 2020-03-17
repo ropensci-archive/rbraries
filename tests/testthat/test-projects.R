@@ -23,7 +23,6 @@ test_that("lio_project_dependencies works", {
   
   expect_is(a, "list")
   expect_is(a$versions, "data.frame")
-  expect_is(a$dependencies, "data.frame")
   expect_equal(a$name, "grunt")
   expect_equal(a$platform, "NPM")
 })

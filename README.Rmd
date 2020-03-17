@@ -13,8 +13,8 @@ knitr::opts_chunk$set(
 [![cran checks](https://cranchecks.info/badges/worst/rbraries)](https://cranchecks.info/pkgs/rbraries)
 [![Build Status](https://travis-ci.org/ropensci/rbraries.svg?branch=master)](https://travis-ci.org/ropensci/rbraries)
 [![codecov.io](https://codecov.io/github/ropensci/rbraries/coverage.svg?branch=master)](https://codecov.io/github/ropensci/rbraries?branch=master)
-[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/rbraries?color=2ECC71)](https://github.com/metacran/cranlogs.app)
-[![cran version](http://www.r-pkg.org/badges/version/rbraries)](https://cran.r-project.org/package=rbraries)
+[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/rbraries?color=2ECC71)](https://github.com/metacran/cranlogs.app)
+[![cran version](https://www.r-pkg.org/badges/version/rbraries)](https://cran.r-project.org/package=rbraries)
 
 
 `rbraries` is a client for interacting with the Libraries.io API <https://libraries.io/api>
@@ -66,13 +66,13 @@ lio_platforms()$name
 
 ## projects
 
-```{r}
+```{r eval=FALSE}
 lio_project_dependents('npm', 'grunt', per_page = 3)
 ```
 
 ## repositories
 
-```{r}
+```{r eval=FALSE}
 lio_repo_projects('gruntjs', 'grunt', per_page = 2)
 ```
 
@@ -84,7 +84,7 @@ lio_subscribe("rubygems", "webmock")
 
 ## user methods
 
-```{r}
+```{r eval=FALSE}
 lio_user('github')
 ```
 
@@ -93,7 +93,9 @@ lio_user('github')
 * Please [report any issues or bugs](https://github.com/ropensci/rbraries/issues).
 * License: MIT
 * Get citation information for `rbraries` in R doing `citation(package = 'rbraries')`
-* Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+* Please note that this project is released with a [Contributor Code of Conduct][coc].
 By participating in this project you agree to abide by its terms.
 
 [![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
+
+[coc]: https://github.com/ropensci/rbraries/blob/master/CODE_OF_CONDUCT.md#L1
