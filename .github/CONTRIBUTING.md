@@ -14,5 +14,3 @@
 * Submit a pull request to home base at `ropensci/rbraries`
 
 ### Also, check out our [discussion forum](https://discuss.ropensci.org)
-
-### Thanks for contributing!
