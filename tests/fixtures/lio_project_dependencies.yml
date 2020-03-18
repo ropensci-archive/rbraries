@@ -1,0 +1,44 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/npm/grunt/latest/dependencies?api_key=<<libraries_token>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '58'
+      etag: W/"1f42d732b5a5690976957944ed6e6a95"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: d9549a4f-f5fc-4143-b5f0-8f72ee8b5375
+      x-runtime: '0.074005'
+      x-cloud-trace-context: dcc2f432acfea4c9af1fb32e8566728a/16428395943330227853;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:10:04 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"dependent_repos_count":386381,"dependents_count":39369,"deprecation_reason":null,"description":"The
+        JavaScript Task Runner","forks":1549,"homepage":"https://gruntjs.com/","keywords":["task","async","cli","minify","uglify","build","lodash","unit","test","qunit","nodeunit","server","init","scaffold","make","jake","tool"],"language":"JavaScript","latest_download_url":"https://registry.npmjs.org/grunt/-/grunt-1.1.0.tgz","latest_release_number":"1.1.0","latest_release_published_at":"2020-03-17T02:37:19.588Z","latest_stable_release":{"id":25513041,"project_id":284257,"number":"1.1.0","published_at":"2020-03-17T02:37:19.588Z","created_at":"2020-03-17T03:03:49.077Z","updated_at":"2020-03-17T03:03:49.077Z","runtime_dependencies_count":null},"latest_stable_release_number":"1.1.0","latest_stable_release_published_at":"2020-03-17T02:37:19.588Z","license_normalized":false,"licenses":"MIT","name":"grunt","normalized_licenses":["MIT"],"package_manager_url":"https://www.npmjs.com/package/grunt","platform":"NPM","rank":31,"repository_url":"https://github.com/gruntjs/grunt","stars":11969,"status":null,"versions":[{"number":"0.1.0","published_at":"2012-01-12T13:08:51.911Z"},{"number":"0.1.1","published_at":"2012-01-19T15:01:53.028Z"},{"number":"0.1.2","published_at":"2012-01-19T15:25:39.520Z"},{"number":"0.2.0","published_at":"2012-01-22T17:32:05.267Z"},{"number":"0.2.1","published_at":"2012-01-23T01:30:52.673Z"},{"number":"0.2.10","published_at":"2012-02-01T02:10:18.439Z"},{"number":"0.2.11","published_at":"2012-02-01T04:16:44.229Z"},{"number":"0.2.12","published_at":"2012-02-01T19:26:26.508Z"},{"number":"0.2.13","published_at":"2012-02-02T00:42:32.520Z"},{"number":"0.2.14","published_at":"2012-02-03T13:48:26.908Z"},{"number":"0.2.15","published_at":"2012-02-07T21:50:00.763Z"},{"number":"0.2.2","published_at":"2012-01-23T01:53:20.034Z"},{"number":"0.2.3","published_at":"2012-01-23T22:01:15.150Z"},{"number":"0.2.4","published_at":"2012-01-23T22:51:11.299Z"},{"number":"0.2.5","published_at":"2012-01-29T22:19:53.966Z"},{"number":"0.2.6","published_at":"2012-01-30T03:35:13.040Z"},{"number":"0.2.7","published_at":"2012-01-30T19:51:24.318Z"},{"number":"0.2.8","published_at":"2012-01-30T21:56:15.458Z"},{"number":"0.2.9","published_at":"2012-01-31T14:10:02.390Z"},{"number":"0.3.0","published_at":"2012-03-23T19:58:45.193Z"},{"number":"0.3.1","published_at":"2012-03-25T18:25:20.536Z"},{"number":"0.3.10","published_at":"2012-06-25T19:46:29.185Z"},{"number":"0.3.11","published_at":"2012-06-29T18:28:55.524Z"},{"number":"0.3.12","published_at":"2012-07-30T21:20:05.768Z"},{"number":"0.3.13","published_at":"2012-08-27T18:01:05.983Z"},{"number":"0.3.13a","published_at":"2012-08-27T17:14:22.578Z"},{"number":"0.3.13-a","published_at":"2012-08-27T17:14:22.578Z"},{"number":"0.3.14","published_at":"2012-08-29T20:55:40.507Z"},{"number":"0.3.15","published_at":"2012-09-04T18:29:52.632Z"},{"number":"0.3.16","published_at":"2012-10-02T19:43:40.421Z"},{"number":"0.3.17","published_at":"2012-10-15T20:44:39.389Z"},{"number":"0.3.2","published_at":"2012-03-26T02:24:32.972Z"},{"number":"0.3.3","published_at":"2012-03-27T00:07:11.128Z"},{"number":"0.3.4","published_at":"2012-03-27T01:36:43.998Z"},{"number":"0.3.5","published_at":"2012-03-28T02:04:08.316Z"},{"number":"0.3.6","published_at":"2012-03-29T03:15:51.494Z"},{"number":"0.3.7","published_at":"2012-04-01T15:09:34.749Z"},{"number":"0.3.8","published_at":"2012-04-06T19:26:25.288Z"},{"number":"0.3.9","published_at":"2012-04-18T12:53:50.167Z"},{"number":"0.4.0","published_at":"2013-02-18T17:27:05.391Z"},{"number":"0.4.0a","published_at":"2012-12-05T15:23:27.577Z"},{"number":"0.4.0-a","published_at":"2012-12-05T15:23:27.577Z"},{"number":"0.4.0rc1","published_at":"2012-12-07T21:38:47.904Z"},{"number":"0.4.0-rc1","published_at":"2012-12-07T21:38:47.904Z"},{"number":"0.4.0rc2","published_at":"2012-12-10T20:51:01.824Z"},{"number":"0.4.0-rc2","published_at":"2012-12-10T20:51:01.824Z"},{"number":"0.4.0rc3","published_at":"2012-12-12T23:08:15.441Z"},{"number":"0.4.0-rc3","published_at":"2012-12-12T23:08:15.441Z"},{"number":"0.4.0rc4","published_at":"2012-12-17T22:17:51.260Z"},{"number":"0.4.0-rc4","published_at":"2012-12-17T22:17:51.260Z"},{"number":"0.4.0rc5","published_at":"2013-01-09T19:24:46.174Z"},{"number":"0.4.0-rc5","published_at":"2013-01-09T19:24:46.174Z"},{"number":"0.4.0rc6","published_at":"2013-01-18T15:53:19.980Z"},{"number":"0.4.0-rc6","published_at":"2013-01-18T15:53:19.980Z"},{"number":"0.4.0rc7","published_at":"2013-01-21T21:31:58.519Z"},{"number":"0.4.0-rc7","published_at":"2013-01-21T21:31:58.519Z"},{"number":"0.4.0rc8","published_at":"2013-02-14T01:07:06.952Z"},{"number":"0.4.0-rc8","published_at":"2013-02-14T01:07:06.952Z"},{"number":"0.4.1","published_at":"2013-03-13T14:17:46.267Z"},{"number":"0.4.2","published_at":"2013-11-21T20:52:02.430Z"},{"number":"0.4.3","published_at":"2014-03-07T22:00:06.713Z"},{"number":"0.4.4","published_at":"2014-03-12T20:28:51.045Z"},{"number":"0.4.5","published_at":"2014-05-12T17:45:09.046Z"},{"number":"1.0.0","published_at":"2016-04-04T23:26:54.788Z"},{"number":"1.0.0-rc1","published_at":"2016-02-11T18:06:41.147Z"},{"number":"1.0.1","published_at":"2016-04-05T18:16:49.769Z"},{"number":"1.0.2","published_at":"2018-02-07T21:43:31.858Z"},{"number":"1.0.3","published_at":"2018-06-04T00:25:11.527Z"},{"number":"1.0.4","published_at":"2019-03-22T18:50:06.744Z"},{"number":"1.1.0","published_at":"2020-03-17T02:37:19.588Z"}],"dependencies_for_version":"1.1.0","dependencies":[]}'
+  recorded_at: 2020-03-18 01:10:04 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

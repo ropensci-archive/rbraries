@@ -2,7 +2,9 @@ context("lio_user")
 test_that("lio_user works", {
   skip_on_cran()
   
-  a <- lio_user('ropensci')
+  vcr::use_cassette("lio_user", {
+    a <- lio_user('ropensci')
+  })
   
   expect_is(a, "list")
   expect_equal(a$login, "ropensci")
@@ -18,7 +20,9 @@ context("lio_user_repositories")
 test_that("lio_user_repositories works", {
   skip_on_cran()
   
-  a <- lio_user_repositories('ropensci', per_page = 3)
+  vcr::use_cassette("lio_user_repositories", {
+    a <- lio_user_repositories('ropensci', per_page = 3)
+  })
   
   expect_is(a, "data.frame")
   expect_is(a$full_name, "character")
@@ -37,7 +41,9 @@ context("lio_user_pkgs")
 test_that("lio_user_pkgs works", {
   skip_on_cran()
   
-  a <- lio_user_pkgs('ropensci', per_page = 3)
+  vcr::use_cassette("lio_user_pkgs", {
+    a <- lio_user_pkgs('ropensci', per_page = 3)
+  })
   
   expect_is(a, "data.frame")
   expect_match(a$homepage, "ropensci")
@@ -56,7 +62,9 @@ context("lio_user_pkg_contributions")
 test_that("lio_user_pkg_contributions works", {
   skip_on_cran()
   
-  a <- lio_user_pkg_contributions('sckott', per_page = 3)
+  vcr::use_cassette("lio_user_pkg_contributions", {
+    a <- lio_user_pkg_contributions('sckott', per_page = 3)
+  })
   
   expect_is(a, "data.frame")
   expect_is(a$normalized_licenses, "list")
@@ -77,7 +85,9 @@ context("lio_user_repo_contributions")
 test_that("lio_user_repo_contributions works", {
   skip_on_cran()
   
-  a <- lio_user_repo_contributions('sckott', per_page = 3)
+  vcr::use_cassette("lio_user_repo_contributions", {
+    a <- lio_user_repo_contributions('sckott', per_page = 3)
+  })
   
   expect_is(a, "data.frame")
   expect_is(a$full_name, "character")
@@ -96,7 +106,9 @@ context("lio_user_dependencies")
 test_that("lio_user_dependencies works", {
   skip_on_cran()
   
-  a <- lio_user_dependencies('ropensci', per_page = 3)
+  vcr::use_cassette("lio_user_dependencies", {
+    a <- lio_user_dependencies('ropensci', per_page = 3)
+  })
   
   expect_is(a, "data.frame")
   expect_is(a$dependents_count, "integer")

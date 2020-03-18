@@ -1,0 +1,44 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/github/ropensci/wellknown/?api_key=<<libraries_token>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '59'
+      etag: W/"f1b5cfe392992e31ee3144f9778c6e63"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 9cd03500-0c91-42f5-85e3-98524dbc7b9d
+      x-runtime: '0.034336'
+      x-cloud-trace-context: 8bda8877214ed18119bfa897476e9068/6528868791031038935;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:11:10 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"full_name":"ropensci/wellknown","description":"WKT \u003c-\u003e
+        GeoJSON","fork":false,"created_at":"2015-01-22T00:19:18.000Z","updated_at":"2019-10-11T19:17:47.939Z","pushed_at":"2019-02-25T23:32:36.000Z","homepage":"https://docs.ropensci.org/wellknown","size":298,"stargazers_count":15,"language":"R","has_issues":true,"has_wiki":false,"has_pages":false,"forks_count":1,"mirror_url":null,"open_issues_count":7,"default_branch":"master","subscribers_count":6,"uuid":"29632266","source_name":null,"license":"Other","private":false,"contributions_count":2,"has_readme":"README.Rmd","has_changelog":null,"has_contributing":".github/CONTRIBUTING.md","has_license":"LICENSE","has_coc":"CODE_OF_CONDUCT.md","has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2019-10-11T19:17:47.501Z","rank":6,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"29632266","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":2,"keywords":["geojson","geospatial","r","r-package","rstats","spatial","wellknown","wkb","wkt"]}'
+  recorded_at: 2020-03-18 01:11:10 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

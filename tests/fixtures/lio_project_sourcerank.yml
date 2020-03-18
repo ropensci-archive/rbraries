@@ -1,0 +1,43 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/npm/turf/sourcerank?api_key=<<libraries_token>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '54'
+      etag: W/"ae205647182c430c514850e4903ba3f9"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 7e307516-1848-4c0e-b760-0abb8bd443b9
+      x-runtime: '0.126588'
+      x-cloud-trace-context: 88a9c82fd772b47cc7e4606fd3a2476a/5097190539502461674;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:10:05 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"basic_info_present":1,"repository_present":1,"readme_present":1,"license_present":1,"versions_present":1,"follows_semver":1,"recent_release":0,"not_brand_new":1,"one_point_oh":1,"dependent_projects":4,"dependent_repositories":3,"stars":4,"contributors":1,"subscribers":0,"all_prereleases":0,"any_outdated_dependencies":-1,"is_deprecated":0,"is_unmaintained":0,"is_removed":0}'
+  recorded_at: 2020-03-18 01:10:06 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

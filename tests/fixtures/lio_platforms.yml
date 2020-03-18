@@ -1,0 +1,44 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/platforms?api_key=<<libraries_token>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '59'
+      etag: W/"8fb925ee17690270f802ea3b8dbe7d07"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 8d66f600-c61e-4391-b30a-93b324cdd0f1
+      x-runtime: '0.025827'
+      x-cloud-trace-context: b55081f5936e41d2af0f6b8da595b26e/2147864950127268148;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Tue, 17 Mar 2020 23:33:57 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '[{"name":"Go","project_count":1818631,"homepage":"http://go-search.org/","color":"#375eab","default_language":null},{"name":"NPM","project_count":1333545,"homepage":"https://www.npmjs.com","color":"#f1e05a","default_language":"JavaScript"},{"name":"Packagist","project_count":323139,"homepage":"https://packagist.org","color":"#4F5D95","default_language":"PHP"},{"name":"Pypi","project_count":243838,"homepage":"https://pypi.org/","color":"#3572A5","default_language":"Python"},{"name":"NuGet","project_count":201182,"homepage":"https://www.nuget.org","color":"#178600","default_language":"C#"},{"name":"Maven","project_count":185231,"homepage":"http://maven.org","color":"#b07219","default_language":"Java"},{"name":"Rubygems","project_count":163986,"homepage":"https://rubygems.org","color":"#701516","default_language":"Ruby"},{"name":"Bower","project_count":69681,"homepage":"http://bower.io","color":"#563d7c","default_language":"CSS"},{"name":"CocoaPods","project_count":69638,"homepage":"http://cocoapods.org/","color":"#438eff","default_language":"Objective-C"},{"name":"Wordpress","project_count":66478,"homepage":"https://wordpress.org/plugins","color":"#4F5D95","default_language":"PHP"},{"name":"Cargo","project_count":38614,"homepage":"https://crates.io","color":"#dea584","default_language":"Rust"},{"name":"CPAN","project_count":37771,"homepage":"https://metacpan.org","color":"#0298c3","default_language":"Perl"},{"name":"Clojars","project_count":24295,"homepage":"https://clojars.org","color":"#db5855","default_language":"Clojure"},{"name":"CRAN","project_count":17097,"homepage":"https://cran.r-project.org/","color":"#198CE7","default_language":"R"},{"name":"Hackage","project_count":14680,"homepage":"http://hackage.haskell.org","color":"#29b544","default_language":null},{"name":"Meteor","project_count":13410,"homepage":"https://atmospherejs.com","color":"#f1e05a","default_language":"JavaScript"},{"name":"Atom","project_count":12966,"homepage":"https://atom.io","color":"#244776","default_language":"CoffeeScript"},{"name":"Pub","project_count":11287,"homepage":"https://pub.dartlang.org","color":"#00B4AB","default_language":"Dart"},{"name":"Hex","project_count":9746,"homepage":"https://hex.pm","color":"#6e4a7e","default_language":"Elixir"},{"name":"PlatformIO","project_count":6877,"homepage":"http://platformio.org","color":"#f34b7d","default_language":"C++"},{"name":"Puppet","project_count":6515,"homepage":"https://forge.puppet.com","color":"#302B6D","default_language":"Puppet"},{"name":"Emacs","project_count":4937,"homepage":"http://melpa.org","color":"#c065db","default_language":"Emacs
+        Lisp"},{"name":"Homebrew","project_count":4702,"homepage":"http://brew.sh/","color":"#555555","default_language":"C"},{"name":"SwiftPM","project_count":4207,"homepage":"https://developer.apple.com/swift/","color":"#ffac45","default_language":"Swift"},{"name":"Carthage","project_count":3979,"homepage":"https://github.com/Carthage/Carthage","color":"#ffac45","default_language":"Swift"},{"name":"Julia","project_count":3048,"homepage":"http://pkg.julialang.org/","color":"#a270ba","default_language":"Julia"},{"name":"Sublime","project_count":2005,"homepage":"https://packagecontrol.io","color":"#3572A5","default_language":"Python"},{"name":"Conda","project_count":1965,"homepage":"https://anaconda.org","color":"#fff","default_language":null},{"name":"Dub","project_count":1943,"homepage":"http://code.dlang.org","color":"#ba595e","default_language":"D"},{"name":"Racket","project_count":1723,"homepage":"http://pkgs.racket-lang.org/","color":"#375eab","default_language":null},{"name":"Elm","project_count":1505,"homepage":"http://package.elm-lang.org/","color":"#60B5CC","default_language":"Elm"},{"name":"Haxelib","project_count":1452,"homepage":"https://lib.haxe.org","color":"#df7900","default_language":"Haxe"},{"name":"Nimble","project_count":1268,"homepage":"https://github.com/nim-lang/nimble","color":"#37775b","default_language":"Nim"},{"name":"Alcatraz","project_count":464,"homepage":"http://alcatraz.io","color":"#438eff","default_language":"Objective-C"},{"name":"PureScript","project_count":392,"homepage":"https://github.com/purescript/psc-package","color":"#1D222D","default_language":"PureScript"}]'
+  recorded_at: 2020-03-17 23:33:57 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

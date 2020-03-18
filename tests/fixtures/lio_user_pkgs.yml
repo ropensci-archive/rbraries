@@ -1,0 +1,54 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/github/ropensci/projects?api_key=<<libraries_token>>&page=1&per_page=3
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      link: <https://libraries.io/api/github/ropensci/projects?api_key=<<libraries_token>>&page=69&per_page=3>;
+        rel="last", <https://libraries.io/api/github/ropensci/projects?api_key=<<libraries_token>>&page=2&per_page=3>;
+        rel="next"
+      per-page: '3'
+      total: '205'
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '58'
+      etag: W/"49c27f1fbcb8d4a5827c4320ce6644fb"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 34929c0d-7bf1-410f-acce-641b4167c61b
+      x-runtime: '0.274015'
+      x-cloud-trace-context: 255339b1abef04ac1efd5a1c9438ea32/15893511562554974300;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:12:01 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '[{"dependent_repos_count":175,"dependents_count":174,"deprecation_reason":null,"description":"Tools
+        for Spell Checking in R","forks":18,"homepage":"https://github.com/ropensci/spelling#readme","keywords":["r","r-package","rstats","spell-check","spell-checker","spellcheck","spellchecker","spelling"],"language":"R","latest_download_url":"https://cran.r-project.org/src/contrib/spelling_2.1.tar.gz","latest_release_number":"2.1","latest_release_published_at":"2019-03-11T00:00:00.000Z","latest_stable_release":null,"latest_stable_release_number":null,"latest_stable_release_published_at":null,"license_normalized":false,"licenses":"MIT
+        + file LICENSE","name":"spelling","normalized_licenses":["MIT"],"package_manager_url":"https://cran.r-project.org/package=spelling","platform":"CRAN","rank":16,"repository_url":"https://github.com/ropensci/spelling","stars":66,"status":null,"versions":[{"number":"1.0","published_at":"2017-08-28T00:00:00.000Z"},{"number":"1.1","published_at":"2017-12-18T00:00:00.000Z"},{"number":"1.2","published_at":"2018-07-09T16:20:00.000Z"},{"number":"2.0","published_at":"2018-12-17T00:00:00.000Z"},{"number":"2.1","published_at":"2019-03-11T00:00:00.000Z"}]},{"dependent_repos_count":131,"dependents_count":68,"deprecation_reason":null,"description":"Advanced
+        Graphics and Image-Processing in R","forks":60,"homepage":"https://docs.ropensci.org/magick
+        (website)\nhttps://github.com/ropensci/magick (devel)","keywords":["image-magick","image-manipulation","image-processing","imagemagick","imagemagick-wrapper","magick","r","r-package","rstats"],"language":"R","latest_download_url":"https://cran.r-project.org/src/contrib/magick_2.3.tar.gz","latest_release_number":"2.3","latest_release_published_at":"2020-01-24T00:00:00.000Z","latest_stable_release":{"id":6589695,"project_id":1587924,"number":"0.2.2","published_at":"2016-08-19T00:00:00.000Z","created_at":"2016-08-19T15:41:07.097Z","updated_at":"2016-08-19T15:41:07.097Z","runtime_dependencies_count":0},"latest_stable_release_number":"0.2.2","latest_stable_release_published_at":"2016-08-19T00:00:00.000Z","license_normalized":true,"licenses":"MIT
+        + file LICENSE","name":"magick","normalized_licenses":["MIT"],"package_manager_url":"https://cran.r-project.org/package=magick","platform":"CRAN","rank":16,"repository_url":"https://github.com/docs.ropensci.org/magickwebsite","stars":310,"status":null,"versions":[{"number":"0.1","published_at":"2016-07-24T00:00:00.000Z"},{"number":"0.2","published_at":"2016-08-04T00:00:00.000Z"},{"number":"0.2.1","published_at":"2016-08-10T00:00:00.000Z"},{"number":"0.2.2","published_at":"2016-08-19T00:00:00.000Z"},{"number":"0.3","published_at":"2016-09-06T00:00:00.000Z"},{"number":"0.4","published_at":"2017-03-26T00:00:00.000Z"},{"number":"0.5","published_at":"2017-07-28T00:00:00.000Z"},{"number":"1.0","published_at":"2017-08-07T00:00:00.000Z"},{"number":"1.1","published_at":"2017-08-14T21:04:00.000Z"},{"number":"1.2","published_at":"2017-08-21T00:00:00.000Z"},{"number":"1.3","published_at":"2017-09-02T00:00:00.000Z"},{"number":"1.4","published_at":"2017-10-05T00:00:00.000Z"},{"number":"1.5","published_at":"2017-11-03T00:00:00.000Z"},{"number":"1.6","published_at":"2017-12-01T00:00:00.000Z"},{"number":"1.7","published_at":"2018-02-26T00:00:00.000Z"},{"number":"1.8","published_at":"2018-03-19T20:21:00.000Z"},{"number":"1.9","published_at":"2018-05-11T22:09:00.000Z"},{"number":"2.0","published_at":"2018-10-05T00:00:00.000Z"},{"number":"2.1","published_at":"2019-07-25T00:00:00.000Z"},{"number":"2.2","published_at":"2019-08-26T09:10:00.000Z"},{"number":"2.3","published_at":"2020-01-24T00:00:00.000Z"}]},{"dependent_repos_count":130,"dependents_count":32,"deprecation_reason":null,"description":"Provides
+        Access to Git Repositories","forks":50,"homepage":"https://github.com/ropensci/git2r","keywords":["git","git-client","libgit2","libgit2-library","r","r-package","rstats"],"language":"C","latest_download_url":"https://cran.r-project.org/src/contrib/git2r_0.26.0.tar.gz","latest_release_number":"0.26.0","latest_release_published_at":"2019-06-29T00:00:00.000Z","latest_stable_release":{"id":20222829,"project_id":687423,"number":"0.26.0","published_at":"2019-06-29T00:00:00.000Z","created_at":"2019-06-29T11:10:35.799Z","updated_at":"2019-06-29T11:10:35.799Z","runtime_dependencies_count":0},"latest_stable_release_number":"0.26.0","latest_stable_release_published_at":"2019-06-29T00:00:00.000Z","license_normalized":false,"licenses":"GPL-2","name":"git2r","normalized_licenses":["GPL-2.0"],"package_manager_url":"https://cran.r-project.org/package=git2r","platform":"CRAN","rank":16,"repository_url":"https://github.com/ropensci/git2r","stars":157,"status":null,"versions":[{"number":"0.10.1","published_at":"2015-05-07T23:10:00.000Z"},{"number":"0.11.0","published_at":"2015-08-12T00:00:00.000Z"},{"number":"0.12.1","published_at":"2015-12-05T00:00:00.000Z"},{"number":"0.13.1","published_at":"2015-12-10T00:00:00.000Z"},{"number":"0.14.0","published_at":"2016-03-13T00:00:00.000Z"},{"number":"0.15.0","published_at":"2016-05-11T00:00:00.000Z"},{"number":"0.16.0","published_at":"2016-11-20T00:00:00.000Z"},{"number":"0.17.0","published_at":"2016-12-29T00:00:00.000Z"},{"number":"0.18.0","published_at":"2017-01-01T00:00:00.000Z"},{"number":"0.19.0","published_at":"2017-07-19T23:48:00.000Z"},{"number":"0.20.0","published_at":"2017-12-17T00:00:00.000Z"},{"number":"0.21.0","published_at":"2018-01-04T00:00:00.000Z"},{"number":"0.22.1","published_at":"2018-07-10T00:00:00.000Z"},{"number":"0.23.0","published_at":"2018-07-17T00:00:00.000Z"},{"number":"0.24.0","published_at":"2019-01-07T19:10:00.000Z"},{"number":"0.25.1","published_at":"2019-03-17T00:00:00.000Z"},{"number":"0.25.2","published_at":"2019-03-20T00:10:00.000Z"},{"number":"0.26.0","published_at":"2019-06-29T00:00:00.000Z"},{"number":"0.6","published_at":"2015-02-19T00:11:00.000Z"},{"number":"0.7","published_at":"2015-02-23T00:00:00.000Z"}]}]'
+  recorded_at: 2020-03-18 01:12:01 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

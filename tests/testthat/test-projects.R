@@ -2,7 +2,9 @@ context("lio_project")
 test_that("lio_project works", {
   skip_on_cran()
   
-  a <- lio_project('npm', 'grunt')
+  vcr::use_cassette("lio_project", {
+    a <- lio_project('npm', 'grunt')
+  })
   
   expect_is(a, "list")
   expect_is(a$versions, "data.frame")
@@ -19,7 +21,9 @@ context("lio_project_dependencies")
 test_that("lio_project_dependencies works", {
   skip_on_cran()
   
-  a <- lio_project_dependencies('npm', 'grunt')
+  vcr::use_cassette("lio_project_dependencies", {
+    a <- lio_project_dependencies('npm', 'grunt')
+  })
   
   expect_is(a, "list")
   expect_is(a$versions, "data.frame")
@@ -36,8 +40,10 @@ context("lio_project_dependents")
 test_that("lio_project_dependents works", {
   skip_on_cran()
   
-  a <- lio_project_dependents('npm', 'geojson-random')
-  
+  vcr::use_cassette("lio_project_dependents", {
+    a <- lio_project_dependents('npm', 'geojson-random')
+  })
+
   expect_is(a, "data.frame")
   expect_is(a$versions, "list")
   expect_is(a$versions[[1]], "data.frame")
@@ -52,7 +58,10 @@ context("lio_project_dependent_repos")
 test_that("lio_project_dependent_repos works", {
   skip_on_cran()
   
-  a <- lio_project_dependent_repos(platform='npm', name='geojson-random')
+  vcr::use_cassette("lio_project_dependent_repos", {
+    a <- lio_project_dependent_repos(platform='npm',
+      name='geojson-random')
+  })
   
   expect_is(a, "data.frame")
 })
@@ -67,7 +76,9 @@ context("lio_project_contribs")
 test_that("lio_project_contribs works", {
   skip_on_cran()
   
-  a <- lio_project_contribs('npm', 'turf')
+  vcr::use_cassette("lio_project_contribs", {
+    a <- lio_project_contribs('npm', 'turf')
+  })
   
   expect_is(a, "data.frame")
   expect_is(a$name, "character")
@@ -85,8 +96,10 @@ context("lio_project_sourcerank")
 test_that("lio_project_sourcerank works", {
   skip_on_cran()
   
-  a <- lio_project_sourcerank('npm', 'turf')
-  
+  vcr::use_cassette("lio_project_sourcerank", {
+    a <- lio_project_sourcerank('npm', 'turf')
+  })
+
   expect_is(a, "list")
   expect_equal(a$basic_info_present, 1)
   expect_equal(a$follows_semver, 1)
@@ -102,7 +115,9 @@ context("lio_project_search")
 test_that("lio_project_search works", {
   skip_on_cran()
   
-  a <- lio_project_search(q = 'grunt')
+  vcr::use_cassette("lio_project_search", {
+    a <- lio_project_search(q = 'grunt')
+  })
   
   expect_equal(NROW(a), 30)
   expect_is(a, "data.frame")

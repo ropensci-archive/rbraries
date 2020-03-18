@@ -19,7 +19,8 @@ Imports:
     data.table,
     tibble
 Suggests:
-    testthat
+    testthat,
+    vcr
 RoxygenNote: 7.1.0
 X-schema.org-applicationCategory: Web
 X-schema.org-keywords: http, API, web-services, package, software, metadata

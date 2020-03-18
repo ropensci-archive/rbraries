@@ -1,0 +1,52 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/github/sckott/repository-contributions?api_key=<<libraries_token>>&page=1&per_page=3
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      link: <https://libraries.io/api/github/sckott/repository-contributions?api_key=<<libraries_token>>&page=223&per_page=3>;
+        rel="last", <https://libraries.io/api/github/sckott/repository-contributions?api_key=<<libraries_token>>&page=2&per_page=3>;
+        rel="next"
+      per-page: '3'
+      total: '667'
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '56'
+      etag: W/"22b1c3962ba712b2b147e98b56a75d22"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 5ae97de5-e33a-4c15-86a4-7e01597b7d63
+      x-runtime: '0.084855'
+      x-cloud-trace-context: b61d98e37ec9febf9def0598b73343b3/17629471113698020174;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:12:02 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '[{"full_name":"elastic/elasticsearch","description":"Open Source, Distributed,
+        RESTful Search Engine","fork":false,"created_at":"2010-02-08T13:20:56.000Z","updated_at":"2020-03-05T05:49:44.757Z","pushed_at":"2020-02-17T20:57:11.000Z","homepage":"https://www.elastic.co/products/elasticsearch","size":706916,"stargazers_count":47046,"language":"Java","has_issues":true,"has_wiki":false,"has_pages":false,"forks_count":15994,"mirror_url":null,"open_issues_count":2507,"default_branch":"master","subscribers_count":2782,"uuid":"507775","source_name":null,"license":"Other","private":false,"contributions_count":837,"has_readme":"README.textile","has_changelog":null,"has_contributing":"CONTRIBUTING.md","has_license":"LICENSE.txt","has_coc":null,"has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2018-12-05T10:33:40.511Z","rank":21,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"507775","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":837,"keywords":["elasticsearch","java","search-engine"]},{"full_name":"etcd-io/etcd","description":"Distributed
+        reliable key-value store for the most critical data of a distributed system","fork":false,"created_at":"2013-07-06T21:57:21.000Z","updated_at":"2019-12-25T07:09:09.000Z","pushed_at":"2019-12-25T01:07:12.000Z","homepage":"https://etcd.io","size":56984,"stargazers_count":28872,"language":"Go","has_issues":true,"has_wiki":false,"has_pages":false,"forks_count":5955,"mirror_url":null,"open_issues_count":582,"default_branch":"master","subscribers_count":1322,"uuid":"11225014","source_name":null,"license":"Apache-2.0","private":false,"contributions_count":474,"has_readme":"README.md","has_changelog":"CHANGELOG-2.3.md","has_contributing":"CONTRIBUTING.md","has_license":"LICENSE","has_coc":"code-of-conduct.md","has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2019-04-07T03:52:43.631Z","rank":15,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"11225014","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":474,"keywords":["consensus","database","distributed-database","distributed-systems","etcd","go","key-value","kubernetes","raft"]},{"full_name":"vcr/vcr","description":"Record
+        your test suite''s HTTP interactions and replay them during future test runs
+        for fast, deterministic, accurate tests.","fork":false,"created_at":"2010-02-25T07:16:00.000Z","updated_at":"2020-02-05T19:18:37.968Z","pushed_at":"2020-02-05T19:16:02.000Z","homepage":"http://relishapp.com/vcr/vcr","size":3093,"stargazers_count":4671,"language":"Ruby","has_issues":true,"has_wiki":true,"has_pages":true,"forks_count":447,"mirror_url":null,"open_issues_count":93,"default_branch":"master","subscribers_count":68,"uuid":"535266","source_name":null,"license":"Other","private":false,"contributions_count":130,"has_readme":"README.md","has_changelog":"CHANGELOG.md","has_contributing":"CONTRIBUTING.md","has_license":"LICENSE","has_coc":null,"has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2020-02-05T19:18:37.950Z","rank":21,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"535266","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":130,"keywords":[]}]'
+  recorded_at: 2020-03-18 01:12:02 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

@@ -1,0 +1,95 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/npm/turf/contributors?api_key=<<libraries_token>>&page=1&per_page=30
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      link: <https://libraries.io/api/npm/turf/contributors?api_key=<<libraries_token>>&page=4&per_page=30>;
+        rel="last", <https://libraries.io/api/npm/turf/contributors?api_key=<<libraries_token>>&page=2&per_page=30>;
+        rel="next"
+      per-page: '30'
+      total: '96'
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '55'
+      etag: W/"65d41e31f337ee1e0d53c89d985266ea"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 939df212-dfa2-4ad6-8f7e-9231fc22e32e
+      x-runtime: '0.130162'
+      x-cloud-trace-context: 2b0d8c9075de6289241ead68b69849bf/17849838499457515106;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:10:05 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: "[{\"github_id\":\"550895\",\"login\":\"DenisCarriere\",\"user_type\":\"User\",\"created_at\":\"2015-02-17T05:58:10.109Z\",\"updated_at\":\"2019-11-13T12:39:22.355Z\",\"name\":\"Denis\",\"company\":\"EOS-Nation\",\"blog\":\"https://twitter.com/DenisCarriere\",\"location\":\"Ottawa,
+        ON Canada\",\"hidden\":false,\"last_synced_at\":\"2017-02-23T22:00:09.033Z\",\"email\":null,\"bio\":\"Co-Founder
+        and CTO @EOS-Nation  \U0001F680\U0001F31F\",\"uuid\":\"550895\",\"host_type\":\"GitHub\"},{\"github_id\":\"814300\",\"login\":\"morganherlocker\",\"user_type\":\"User\",\"created_at\":\"2015-02-03T01:52:28.269Z\",\"updated_at\":\"2017-01-01T02:03:20.938Z\",\"name\":\"Morgan
+        Herlocker\",\"company\":\"Mapbox\",\"blog\":\"http://morganherlocker.com/\",\"location\":\"Oakland,
+        CA\",\"hidden\":false,\"last_synced_at\":\"2017-01-01T02:03:20.031Z\",\"email\":\"morgan.herlocker@gmail.com\",\"bio\":null,\"uuid\":\"814300\",\"host_type\":\"GitHub\"},{\"github_id\":\"32314\",\"login\":\"tmcw\",\"user_type\":\"User\",\"created_at\":\"2015-01-27T07:04:42.027Z\",\"updated_at\":\"2019-12-21T05:21:44.738Z\",\"name\":\"Tom
+        MacWright\",\"company\":null,\"blog\":\"https://macwright.org/\",\"location\":\"san
+        francisco\",\"hidden\":false,\"last_synced_at\":\"2016-12-18T23:03:24.204Z\",\"email\":null,\"bio\":\"hi!\",\"uuid\":\"32314\",\"host_type\":\"GitHub\"},{\"github_id\":\"12717225\",\"login\":\"stebogit\",\"user_type\":\"User\",\"created_at\":\"2015-11-02T09:53:36.147Z\",\"updated_at\":\"2018-06-02T18:35:02.899Z\",\"name\":\"Stefano
+        Borghi\",\"company\":null,\"blog\":\"\",\"location\":\"Wenatchee, WA\",\"hidden\":false,\"last_synced_at\":\"2016-04-14T13:37:49.493Z\",\"email\":null,\"bio\":null,\"uuid\":\"12717225\",\"host_type\":\"GitHub\"},{\"github_id\":\"6735870\",\"login\":\"rowanwins\",\"user_type\":\"User\",\"created_at\":\"2015-05-30T07:48:24.101Z\",\"updated_at\":\"2018-02-07T03:55:47.043Z\",\"name\":\"Rowan
+        Winsemius\",\"company\":null,\"blog\":\"\",\"location\":\"Canberra, Australia\",\"hidden\":false,\"last_synced_at\":\"2017-01-17T19:03:53.131Z\",\"email\":null,\"bio\":\"Mostly
+        coding geospatial stuff\",\"uuid\":\"6735870\",\"host_type\":\"GitHub\"},{\"github_id\":\"827683\",\"login\":\"muziejus\",\"user_type\":\"User\",\"created_at\":\"2015-12-15T01:50:39.454Z\",\"updated_at\":\"2019-08-14T16:01:11.898Z\",\"name\":\"Moacir
+        P. de Sá Pereira\",\"company\":null,\"blog\":\"http://moacir.com\",\"location\":\"New
+        York, NY\",\"hidden\":false,\"last_synced_at\":\"2016-03-08T14:44:13.002Z\",\"email\":null,\"bio\":\"Scholar/collaborator
+        of literature and space, using data to generate new research questions. Wikipedia
+        and ice water.\",\"uuid\":\"827683\",\"host_type\":\"GitHub\"},{\"github_id\":\"18135358\",\"login\":\"zhuang-hao-ming\",\"user_type\":\"User\",\"created_at\":\"2016-03-29T09:15:21.355Z\",\"updated_at\":\"2017-07-05T01:48:42.721Z\",\"name\":\"haoming\",\"company\":null,\"blog\":\"\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2016-03-29T09:39:44.241Z\",\"email\":\"csuhaoming@163.com\",\"bio\":null,\"uuid\":\"18135358\",\"host_type\":\"GitHub\"},{\"github_id\":\"678344\",\"login\":\"stevage\",\"user_type\":\"User\",\"created_at\":\"2015-02-17T02:28:05.205Z\",\"updated_at\":\"2018-06-15T00:27:17.961Z\",\"name\":\"Steve
+        Bennett\",\"company\":null,\"blog\":\"http://stevebennett.me\",\"location\":\"Melbourne\",\"hidden\":false,\"last_synced_at\":\"2017-02-06T10:06:52.363Z\",\"email\":\"stevage@gmail.com\",\"bio\":\"Freelance
+        open data and Mapbox guru: hire.stevebennett.me.\\r\\nCreator of opencouncildata.org,
+        opentransportdata.org, opentrees.org, openbinmap.org,\\r\\ngetlon.lat\",\"uuid\":\"678344\",\"host_type\":\"GitHub\"},{\"github_id\":\"8147411\",\"login\":\"dpmcmlxxvi\",\"user_type\":\"User\",\"created_at\":\"2015-08-04T04:42:21.664Z\",\"updated_at\":\"2016-04-26T01:12:23.893Z\",\"name\":null,\"company\":null,\"blog\":\"http://dpmcmlxxvi.github.io/\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2016-04-26T01:12:23.872Z\",\"email\":null,\"bio\":null,\"uuid\":\"8147411\",\"host_type\":\"GitHub\"},{\"github_id\":\"319900\",\"login\":\"aurelien-defossez\",\"user_type\":\"User\",\"created_at\":\"2015-11-18T17:23:30.464Z\",\"updated_at\":\"2016-04-03T14:13:02.330Z\",\"name\":\"Aurélien
+        Defossez\",\"company\":\"Tabemasu Games\",\"blog\":\"www.tabemasu.com\",\"location\":\"Lyon,
+        France\",\"hidden\":false,\"last_synced_at\":\"2016-04-03T14:13:02.311Z\",\"email\":null,\"bio\":null,\"uuid\":\"319900\",\"host_type\":\"GitHub\"},{\"github_id\":\"217720\",\"login\":\"ath0mas\",\"user_type\":\"User\",\"created_at\":\"2015-01-27T07:06:30.038Z\",\"updated_at\":\"2017-10-10T03:58:21.562Z\",\"name\":\"Alexis
+        THOMAS\",\"company\":null,\"blog\":\"\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2016-12-19T17:40:51.881Z\",\"email\":null,\"bio\":null,\"uuid\":\"217720\",\"host_type\":\"GitHub\"},{\"github_id\":\"3855777\",\"login\":\"miccferr\",\"user_type\":\"User\",\"created_at\":\"2015-08-19T08:59:57.212Z\",\"updated_at\":\"2017-05-13T16:03:57.390Z\",\"name\":\"Michele
+        Ferretti\",\"company\":null,\"blog\":\"\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2017-04-22T16:25:34.789Z\",\"email\":null,\"bio\":null,\"uuid\":\"3855777\",\"host_type\":\"GitHub\"},{\"github_id\":\"2523165\",\"login\":\"lyzidiamond\",\"user_type\":\"User\",\"created_at\":\"2015-01-27T07:04:41.576Z\",\"updated_at\":\"2017-05-14T22:19:33.223Z\",\"name\":\"Lyzi
+        Diamond\",\"company\":\"@mapbox \",\"blog\":\"http://lyzidiamond.com\",\"location\":\"Portland,
+        OR\",\"hidden\":false,\"last_synced_at\":\"2016-12-18T23:03:05.108Z\",\"email\":null,\"bio\":null,\"uuid\":\"2523165\",\"host_type\":\"GitHub\"},{\"github_id\":\"20334321\",\"login\":\"vamshi29292\",\"user_type\":\"User\",\"created_at\":\"2016-07-10T07:29:45.211Z\",\"updated_at\":\"2016-07-10T07:29:46.426Z\",\"name\":null,\"company\":null,\"blog\":null,\"location\":null,\"hidden\":false,\"last_synced_at\":\"2016-07-10T07:29:46.405Z\",\"email\":null,\"bio\":null,\"uuid\":\"20334321\",\"host_type\":\"GitHub\"},{\"github_id\":\"20334321\",\"login\":\"vamshi29292\",\"user_type\":\"User\",\"created_at\":\"2016-07-10T07:29:45.211Z\",\"updated_at\":\"2016-07-10T07:29:46.426Z\",\"name\":null,\"company\":null,\"blog\":null,\"location\":null,\"hidden\":false,\"last_synced_at\":\"2016-07-10T07:29:46.405Z\",\"email\":null,\"bio\":null,\"uuid\":\"20334321\",\"host_type\":\"GitHub\"},{\"github_id\":\"4379184\",\"login\":\"PizzaBrandon\",\"user_type\":\"User\",\"created_at\":\"2015-02-16T11:28:34.525Z\",\"updated_at\":\"2017-11-24T02:11:54.672Z\",\"name\":\"Brandon
+        Belvin\",\"company\":null,\"blog\":\"https://twitter.com/PizzaBrandon\",\"location\":\"St.
+        Louis, MO, USA\",\"hidden\":false,\"last_synced_at\":\"2017-01-15T21:02:15.601Z\",\"email\":null,\"bio\":null,\"uuid\":\"4379184\",\"host_type\":\"GitHub\"},{\"github_id\":\"4379184\",\"login\":\"PizzaBrandon\",\"user_type\":\"User\",\"created_at\":\"2015-02-16T11:28:34.525Z\",\"updated_at\":\"2017-11-24T02:11:54.672Z\",\"name\":\"Brandon
+        Belvin\",\"company\":null,\"blog\":\"https://twitter.com/PizzaBrandon\",\"location\":\"St.
+        Louis, MO, USA\",\"hidden\":false,\"last_synced_at\":\"2017-01-15T21:02:15.601Z\",\"email\":null,\"bio\":null,\"uuid\":\"4379184\",\"host_type\":\"GitHub\"},{\"github_id\":\"23040076\",\"login\":\"greenkeeper[bot]\",\"user_type\":\"Bot\",\"created_at\":\"2018-05-17T10:48:30.101Z\",\"updated_at\":\"2018-05-17T10:49:40.685Z\",\"name\":null,\"company\":null,\"blog\":\"\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2018-05-17T10:49:40.674Z\",\"email\":null,\"bio\":null,\"uuid\":\"23040076\",\"host_type\":\"GitHub\"},{\"github_id\":\"144225\",\"login\":\"atdrago\",\"user_type\":\"User\",\"created_at\":\"2015-02-03T01:52:31.103Z\",\"updated_at\":\"2017-01-01T02:03:25.929Z\",\"name\":\"Adam
+        Drago\",\"company\":null,\"blog\":\"adamdrago.com\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2017-01-01T02:03:25.452Z\",\"email\":null,\"bio\":null,\"uuid\":\"144225\",\"host_type\":\"GitHub\"},{\"github_id\":\"351164\",\"login\":\"chelm\",\"user_type\":\"User\",\"created_at\":\"2015-02-03T01:52:30.343Z\",\"updated_at\":\"2017-06-08T21:20:05.151Z\",\"name\":\"Christopher
+        Helm\",\"company\":null,\"blog\":\"\",\"location\":\"Salida, CO\",\"hidden\":false,\"last_synced_at\":\"2017-01-01T02:03:20.636Z\",\"email\":\"christopher.helm@gmail.com\",\"bio\":null,\"uuid\":\"351164\",\"host_type\":\"GitHub\"},{\"github_id\":\"23040076\",\"login\":\"greenkeeper[bot]\",\"user_type\":\"Bot\",\"created_at\":\"2018-05-17T10:48:30.101Z\",\"updated_at\":\"2018-05-17T10:49:40.685Z\",\"name\":null,\"company\":null,\"blog\":\"\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2018-05-17T10:49:40.674Z\",\"email\":null,\"bio\":null,\"uuid\":\"23040076\",\"host_type\":\"GitHub\"},{\"github_id\":\"833760\",\"login\":\"pwilczynski\",\"user_type\":\"User\",\"created_at\":\"2016-09-12T03:04:30.844Z\",\"updated_at\":\"2017-10-18T23:08:00.759Z\",\"name\":\"Peter
+        Wilczynski\",\"company\":\"Schrodinger/Yale\",\"blog\":\"\",\"location\":\"NYC\",\"hidden\":false,\"last_synced_at\":\"2016-09-12T03:04:32.574Z\",\"email\":\"pete.wilz@gmail.com\",\"bio\":null,\"uuid\":\"833760\",\"host_type\":\"GitHub\"},{\"github_id\":\"3952537\",\"login\":\"camilleanne\",\"user_type\":\"User\",\"created_at\":\"2015-01-28T16:03:04.723Z\",\"updated_at\":\"2017-08-04T13:02:07.469Z\",\"name\":\"Camille
+        Teicheira\",\"company\":\"Mapbox\",\"blog\":\"\",\"location\":\"San Francisco\",\"hidden\":false,\"last_synced_at\":\"2016-12-25T13:10:56.086Z\",\"email\":null,\"bio\":null,\"uuid\":\"3952537\",\"host_type\":\"GitHub\"},{\"github_id\":\"7316730\",\"login\":\"monkeywithacupcake\",\"user_type\":\"User\",\"created_at\":\"2017-01-22T06:11:05.439Z\",\"updated_at\":\"2018-03-10T04:49:09.377Z\",\"name\":\"jess\",\"company\":null,\"blog\":\"jessachandler.com\",\"location\":\"Yokosuka,
+        Japan\",\"hidden\":false,\"last_synced_at\":\"2017-01-22T06:13:01.502Z\",\"email\":null,\"bio\":\"Note:
+        I'm helping set up repos for Open Collective. If you don't know what that
+        is, please go to opencollective.com. \",\"uuid\":\"7316730\",\"host_type\":\"GitHub\"},{\"github_id\":\"2221431\",\"login\":\"kochizufan\",\"user_type\":\"User\",\"created_at\":\"2015-05-30T15:59:28.709Z\",\"updated_at\":\"2019-01-28T22:23:26.908Z\",\"name\":\"OHTSUKA
+        Ko-hei\",\"company\":\"HERE Japan\",\"blog\":\"\",\"location\":\"Shin-Yokohama
+        / Nara, Japan\",\"hidden\":false,\"last_synced_at\":\"2017-03-16T13:24:28.767Z\",\"email\":\"kochizufan@gmail.com\",\"bio\":\"Founder
+        of Rekishikokudo project(tilemap.jp)\",\"uuid\":\"2221431\",\"host_type\":\"GitHub\"},{\"github_id\":\"4043438\",\"login\":\"davidchouse\",\"user_type\":\"User\",\"created_at\":\"2015-07-22T01:05:00.011Z\",\"updated_at\":\"2017-08-12T13:24:34.869Z\",\"name\":\"David
+        C\",\"company\":null,\"blog\":\"\",\"location\":null,\"hidden\":false,\"last_synced_at\":\"2017-08-12T13:24:34.262Z\",\"email\":null,\"bio\":null,\"uuid\":\"4043438\",\"host_type\":\"GitHub\"},{\"github_id\":\"628431\",\"login\":\"davidtheclark\",\"user_type\":\"User\",\"created_at\":\"2015-02-03T01:38:08.537Z\",\"updated_at\":\"2016-12-31T10:39:55.492Z\",\"name\":\"David
+        Clark\",\"company\":\"@mapbox \",\"blog\":\"http://davidtheclark.com/\",\"location\":\"Tucson,
+        AZ\",\"hidden\":false,\"last_synced_at\":\"2016-12-31T10:39:54.195Z\",\"email\":\"david.dave.clark@gmail.com\",\"bio\":null,\"uuid\":\"628431\",\"host_type\":\"GitHub\"},{\"github_id\":\"628431\",\"login\":\"davidtheclark\",\"user_type\":\"User\",\"created_at\":\"2015-02-03T01:38:08.537Z\",\"updated_at\":\"2016-12-31T10:39:55.492Z\",\"name\":\"David
+        Clark\",\"company\":\"@mapbox \",\"blog\":\"http://davidtheclark.com/\",\"location\":\"Tucson,
+        AZ\",\"hidden\":false,\"last_synced_at\":\"2016-12-31T10:39:54.195Z\",\"email\":\"david.dave.clark@gmail.com\",\"bio\":null,\"uuid\":\"628431\",\"host_type\":\"GitHub\"},{\"github_id\":\"628431\",\"login\":\"davidtheclark\",\"user_type\":\"User\",\"created_at\":\"2015-02-03T01:38:08.537Z\",\"updated_at\":\"2016-12-31T10:39:55.492Z\",\"name\":\"David
+        Clark\",\"company\":\"@mapbox \",\"blog\":\"http://davidtheclark.com/\",\"location\":\"Tucson,
+        AZ\",\"hidden\":false,\"last_synced_at\":\"2016-12-31T10:39:54.195Z\",\"email\":\"david.dave.clark@gmail.com\",\"bio\":null,\"uuid\":\"628431\",\"host_type\":\"GitHub\"},{\"github_id\":\"827683\",\"login\":\"muziejus\",\"user_type\":\"User\",\"created_at\":\"2015-12-15T01:50:39.454Z\",\"updated_at\":\"2019-08-14T16:01:11.898Z\",\"name\":\"Moacir
+        P. de Sá Pereira\",\"company\":null,\"blog\":\"http://moacir.com\",\"location\":\"New
+        York, NY\",\"hidden\":false,\"last_synced_at\":\"2016-03-08T14:44:13.002Z\",\"email\":null,\"bio\":\"Scholar/collaborator
+        of literature and space, using data to generate new research questions. Wikipedia
+        and ice water.\",\"uuid\":\"827683\",\"host_type\":\"GitHub\"}]"
+  recorded_at: 2020-03-18 01:10:05 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

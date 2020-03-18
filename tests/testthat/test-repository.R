@@ -2,7 +2,9 @@ context("lio_repo")
 test_that("lio_repo works", {
   skip_on_cran()
   
-  a <- lio_repo('ropensci', 'wellknown')
+  vcr::use_cassette("lio_repo", {
+    a <- lio_repo('ropensci', 'wellknown')
+  })
   
   expect_is(a, "list")
   expect_equal(a$full_name, "ropensci/wellknown")
@@ -18,7 +20,9 @@ context("lio_repo_dependencies")
 test_that("lio_repo_dependencies works", {
   skip_on_cran()
   
-  a <- lio_repo_dependencies('ropensci', 'wellknown')
+  vcr::use_cassette("lio_repo_dependencies", {
+    a <- lio_repo_dependencies('ropensci', 'wellknown')
+  })
   
   expect_is(a, "list")
   expect_is(a$dependencies, "data.frame")
@@ -33,7 +37,9 @@ context("lio_repo_projects")
 test_that("lio_repo_projects works", {
   skip_on_cran()
   
-  a <- lio_repo_projects('gruntjs', 'grunt', per_page = 2)
+  vcr::use_cassette("lio_repo_projects", {
+    a <- lio_repo_projects('gruntjs', 'grunt', per_page = 2)
+  })
   
   expect_is(a, "data.frame")
   expect_is(a$name, "character")

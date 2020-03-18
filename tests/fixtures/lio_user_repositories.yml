@@ -1,0 +1,51 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/github/ropensci/repositories?api_key=<<libraries_token>>&page=1&per_page=3
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      link: <https://libraries.io/api/github/ropensci/repositories?api_key=<<libraries_token>>&page=132&per_page=3>;
+        rel="last", <https://libraries.io/api/github/ropensci/repositories?api_key=<<libraries_token>>&page=2&per_page=3>;
+        rel="next"
+      per-page: '3'
+      total: '395'
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '59'
+      etag: W/"2edb0cad7dfbe2eed314ff83471ed420"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 8d666ec4-11ff-4b3a-97df-1d97f9b84491
+      x-runtime: '0.074782'
+      x-cloud-trace-context: 8873336a1a56c4bd6e4f6cf73afaa19e/10158470775800730978;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:12:00 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '[{"full_name":"ropensci/plotly","description":"An interactive graphing
+        library for R","fork":false,"created_at":"2013-11-21T05:56:51.000Z","updated_at":"2019-05-01T18:07:23.000Z","pushed_at":"2019-04-11T19:33:45.000Z","homepage":"https://plotly-r.com","size":97744,"stargazers_count":1498,"language":"R","has_issues":true,"has_wiki":true,"has_pages":true,"forks_count":520,"mirror_url":null,"open_issues_count":255,"default_branch":"master","subscribers_count":117,"uuid":"14579179","source_name":null,"license":"Other","private":false,"contributions_count":21,"has_readme":"README.md","has_changelog":null,"has_contributing":"CONTRIBUTING.md","has_license":"LICENSE","has_coc":null,"has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2016-05-27T18:02:12.841Z","rank":9,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"14579179","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":21,"keywords":["d3js","data-visualization","ggplot2","javascript","plotly","r","r-package","rstats","shiny","webgl"]},{"full_name":"ropensci/drake","description":"An
+        R-focused pipeline toolkit for reproducibility and high-performance computing","fork":false,"created_at":"2017-02-20T22:28:40.000Z","updated_at":"2020-03-01T05:41:04.165Z","pushed_at":"2020-03-01T02:49:12.000Z","homepage":"https://docs.ropensci.org/drake","size":95097,"stargazers_count":1056,"language":"R","has_issues":true,"has_wiki":true,"has_pages":true,"forks_count":114,"mirror_url":null,"open_issues_count":16,"default_branch":"master","subscribers_count":31,"uuid":"82609103","source_name":null,"license":"GPL-3.0","private":false,"contributions_count":28,"has_readme":"README.Rmd","has_changelog":null,"has_contributing":"CONTRIBUTING.md","has_license":"LICENSE","has_coc":"CODE_OF_CONDUCT.md","has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2019-04-19T15:01:58.683Z","rank":10,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"82609103","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":28,"keywords":["data-science","drake","high-performance-computing","makefile","peer-reviewed","pipeline","r","r-package","reproducibility","reproducible-research","ropensci","rstats","workflow"]},{"full_name":"ropensci/skimr","description":"A
+        frictionless, pipeable approach to dealing with summary statistics","fork":false,"created_at":"2017-05-25T19:04:26.000Z","updated_at":"2019-11-26T14:34:53.900Z","pushed_at":"2019-11-26T13:23:31.000Z","homepage":"https://docs.ropensci.org/skimr","size":3158,"stargazers_count":703,"language":"HTML","has_issues":true,"has_wiki":true,"has_pages":true,"forks_count":58,"mirror_url":null,"open_issues_count":11,"default_branch":"master","subscribers_count":28,"uuid":"92435362","source_name":null,"license":"Other","private":false,"contributions_count":32,"has_readme":"README.Rmd","has_changelog":null,"has_contributing":"CONTRIBUTING.md","has_license":null,"has_coc":null,"has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2019-11-26T14:34:53.888Z","rank":12,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"92435362","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":32,"keywords":["peer-reviewed","r","r-package","ropensci","rstats","summary-statistics","unconf","unconf17"]}]'
+  recorded_at: 2020-03-18 01:12:00 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

@@ -1,0 +1,44 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/github/ropensci/?api_key=<<libraries_token>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: rbraries/0.2.0
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      x-frame-options: SAMEORIGIN
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      x-download-options: noopen
+      x-permitted-cross-domain-policies: none
+      referrer-policy: strict-origin-when-cross-origin
+      content-type: application/json; charset=utf-8
+      x-ratelimit-limit: '60'
+      x-ratelimit-remaining: '56'
+      etag: W/"cde505ca6a52a18ed2aec26f09136be2"
+      cache-control: max-age=0, private, must-revalidate
+      x-request-id: 24a37b1a-c66b-4dfc-9579-e25fd2e95774
+      x-runtime: '0.027700'
+      x-cloud-trace-context: 4a98b06f3a0db7dbabcaf081388351ae/5030094821953417266;o=0
+      strict-transport-security: max-age=31536000; includeSubDomains
+      vary: Origin
+      date: Wed, 18 Mar 2020 01:11:59 GMT
+      via: 1.1 google
+      alt-svc: clear
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"github_id":"1200269","login":"ropensci","user_type":"Organisation","created_at":"2015-04-07T11:53:26.784Z","updated_at":"2019-05-01T18:13:14.577Z","name":"rOpenSci","company":null,"blog":"https://ropensci.org/","location":"Berkeley,
+        CA","hidden":false,"last_synced_at":"2019-05-01T18:13:14.566Z","email":"info@ropensci.org","bio":null,"followers":0,"following":0,"uuid":"1200269","host_type":"GitHub"}'
+  recorded_at: 2020-03-18 01:11:59 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0
