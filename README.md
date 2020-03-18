@@ -6,7 +6,7 @@ rbraries
 [![cran checks](https://cranchecks.info/badges/worst/rbraries)](https://cranchecks.info/pkgs/rbraries)
 [![Build Status](https://travis-ci.org/ropensci/rbraries.svg?branch=master)](https://travis-ci.org/ropensci/rbraries)
 [![codecov.io](https://codecov.io/github/ropensci/rbraries/coverage.svg?branch=master)](https://codecov.io/github/ropensci/rbraries?branch=master)
-[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/rbraries?color=2ECC71)](https://github.com/metacran/cranlogs.app)
+[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/rbraries?color=2ECC71)](https://github.com/metacran/cranlogs.app)
 [![cran version](https://www.r-pkg.org/badges/version/rbraries)](https://cran.r-project.org/package=rbraries)
 
 

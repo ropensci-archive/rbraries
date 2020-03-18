@@ -1,6 +1,7 @@
 language: r
 cache: packages
 os: linux
+dist: xenial
 
 r_packages:
 - covr
