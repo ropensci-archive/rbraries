@@ -93,10 +93,6 @@ lio_project('npm', 'grunt')
 lio_project_dependencies('npm', 'grunt')
 lio_project_dependencies('npm', 'grunt', '1.0.1')
 
-# dependents
-lio_project_dependents('npm', 'grunt')
-lio_project_dependents('npm', 'grunt', per_page = 3)
-
 # dependent repositories
 lio_project_dependent_repos('npm', 'turf')
 

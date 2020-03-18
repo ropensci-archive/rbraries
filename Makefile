@@ -22,4 +22,7 @@ test:
 readme:
 	${RSCRIPT} -e "knitr::knit('README.Rmd')"
 
+eg:
+	${RSCRIPT} -e "devtools::run_examples()"
+
 .PHONY: all test document install
