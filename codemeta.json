@@ -10,15 +10,15 @@
   "codeRepository": "https://github.com/ropensci/rbraries",
   "issueTracker": "https://github.com/ropensci/rbraries/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0.9110",
+  "version": "0.2.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.0",
+    "version": "3.6.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.0 (2018-04-23)",
-  "author": [],
+  "runtimePlatform": "R version 3.6.3 Patched (2020-02-29 r77909)",
+  "author": {},
   "maintainer": [
     {
       "@type": "Person",
@@ -39,6 +39,18 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=testthat"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "vcr",
+      "name": "vcr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=vcr"
     }
   ],
   "softwareRequirements": [
@@ -46,7 +58,6 @@
       "@type": "SoftwareApplication",
       "identifier": "jsonlite",
       "name": "jsonlite",
-      "version": ">= 1.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -59,7 +70,6 @@
       "@type": "SoftwareApplication",
       "identifier": "crul",
       "name": "crul",
-      "version": ">= 0.5.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -105,17 +115,21 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "contIntegration": "https://travis-ci.org/ropenscilabs/rbraries",
+  "contIntegration": ["https://travis-ci.org/ropensci/rbraries", "https://codecov.io/github/ropensci/rbraries?branch=master"],
   "readme": "https://github.com/ropensci/rbraries/blob/master/README.md",
-  "fileSize": "17.273KB",
+  "fileSize": "60.05KB",
   "applicationCategory": "Web",
   "isPartOf": "https://ropensci.org",
-  "keywords": ["http", "API", "web-services", "package", "software", "metadata", "api-client", "rstats", "librariesio"],
+  "keywords": ["http", "API", "web-services", "package", "software", "metadata", "api-client", "rstats", "librariesio", "r", "r-package"],
   "releaseNotes": "https://github.com/ropensci/rbraries/blob/master/NEWS.md",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
     "name": "Comprehensive R Archive Network (CRAN)",
     "url": "https://cran.r-project.org"
-  }
+  },
+  "relatedLink": "https://docs.ropensci.org/rbraries",
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {}
 }
