@@ -25,4 +25,7 @@ readme:
 eg:
 	${RSCRIPT} -e "devtools::run_examples()"
 
+check_windows:
+	${RSCRIPT} -e "devtools::check_win_devel(); devtools::check_win_release()"
+
 .PHONY: all test document install
