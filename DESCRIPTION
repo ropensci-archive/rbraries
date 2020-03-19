@@ -3,7 +3,7 @@ Title: Interface to the 'Libraries.io' API
 Description: Interface to the 'Libraries.io' API (<https://libraries.io/api>).
     'Libraries.io' indexes data from 36 different package managers for 
     programming languages.
-Version: 0.2.0
+Version: 0.2.0.91
 Author: Scott Chamberlain [aut, cre]
 Maintainer: Scott Chamberlain <myrmecocystus+r@gmail.com>
 License: MIT + file LICENSE
