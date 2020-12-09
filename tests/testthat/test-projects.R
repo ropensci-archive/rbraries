@@ -61,7 +61,7 @@ test_that("lio_project_dependent_repos works", {
   vcr::use_cassette("lio_project_dependent_repos", {
     a <- lio_project_dependent_repos(platform='npm',
       name='geojson-random')
-  })
+  }, preserve_exact_body_bytes = TRUE)
   
   expect_is(a, "data.frame")
 })
