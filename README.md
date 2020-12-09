@@ -15,28 +15,10 @@ rbraries
 
 Package API:
 
- - `lio_project_contribs`
- - `lio_subscriptions`
- - `lio_platforms`
- - `lio_project_dependents`
- - `lio_project_sourcerank`
- - `lio_repo_projects`
- - `lio_user_repositories`
- - `lio_user_repo_contributions`
- - `lio_user_pkg_contributions`
- - `lio_user_dependencies`
- - `lio_repo_dependencies`
- - `lio_project_dependent_repos`
- - `lio_user_pkgs`
- - `lio_subscribed`
- - `lio_repo`
- - `lio_project_dependencies`
- - `lio_subscription_delete`
- - `lio_subscription_update`
- - `lio_project_search`
- - `lio_subscribe`
- - `lio_project`
- - `lio_user`
+
+```
+Error in loadNamespace(name): there is no package called 'rbraries'
+```
 
 As you can see all functions are prefixed with `lio_` to avoid namespace conflicts with other R packages.
 
@@ -71,6 +53,7 @@ remotes::install_github("ropensci/rbraries")
 
 ```r
 library('rbraries')
+#> Error in library("rbraries"): there is no package called 'rbraries'
 ```
 
 ## platforms
@@ -78,13 +61,7 @@ library('rbraries')
 
 ```r
 lio_platforms()$name
-#>  [1] "Go"         "NPM"        "Packagist"  "Pypi"       "NuGet"     
-#>  [6] "Maven"      "Rubygems"   "Bower"      "CocoaPods"  "Wordpress" 
-#> [11] "Cargo"      "CPAN"       "Clojars"    "CRAN"       "Hackage"   
-#> [16] "Meteor"     "Atom"       "Pub"        "Hex"        "PlatformIO"
-#> [21] "Puppet"     "Emacs"      "Homebrew"   "SwiftPM"    "Carthage"  
-#> [26] "Julia"      "Sublime"    "Conda"      "Dub"        "Racket"    
-#> [31] "Elm"        "Haxelib"    "Nimble"     "Alcatraz"   "PureScript"
+#> Error in lio_platforms(): could not find function "lio_platforms"
 ```
 
 ## projects
@@ -120,9 +97,4 @@ lio_user('github')
 * Please [report any issues or bugs](https://github.com/ropensci/rbraries/issues).
 * License: MIT
 * Get citation information for `rbraries` in R doing `citation(package = 'rbraries')`
-* Please note that this project is released with a [Contributor Code of Conduct][coc].
-By participating in this project you agree to abide by its terms.
-
-[![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
-
-[coc]: https://github.com/ropensci/rbraries/blob/master/CODE_OF_CONDUCT.md#L1
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
