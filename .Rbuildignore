@@ -15,5 +15,5 @@ appveyor.yml
 .github
 ^CODE_OF_CONDUCT\.md$
 ^codemeta\.json$
-LICENSE.md
 man-roxygen
+^LICENSE\.md$
